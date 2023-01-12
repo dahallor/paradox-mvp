@@ -1,0 +1,66 @@
+{
+    "settings": [
+        {
+            "username": "example@email.com",
+            "hasUserProfile": false,
+            "last-known-coordinates": null,
+            "blocked-coordinates": null
+        }
+    ],
+    "demographics": [
+        {
+            "Age": null,
+            "Religion": null,
+            "Orientation": null,
+            "Gender Identity": null,
+            "Babaloynian Zodiac": null,
+            "Occupation": null,
+            "Education": null,
+            "Race": null,
+            "Height": null,
+            "Diet": null,
+            "Vices": null
+        }
+    ],
+    "core-questions": [
+        {
+            "Kids": [
+                null,
+                null
+            ],
+            "relationshipStructure": [
+                null,
+                null
+            ],
+            "relgiousConvictions": [
+                null,
+                null
+            ],
+            "sexDrive": [
+                null,
+                null
+            ],
+            "politics?": [
+                null,
+                null
+            ],
+            "kinkiness": [
+                null,
+                null
+            ],
+            "setRoots": [
+                null,
+                null
+            ],
+            "idealGeography": [
+                null,
+                null
+            ]
+        }
+    ],
+    "aux-questions": [
+        {
+            "placeholder": null
+        }
+    ]
+}

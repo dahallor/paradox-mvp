@@ -1,0 +1,164 @@
+{
+    "demographicQuestions": {
+        "Age": null,
+        "Religion": [
+            "Agnostic",
+            "Atheist",
+            "Buddist",
+            "Bahai",
+            "Catholic",
+            "Christian",
+            "Diest",
+            "Jane",
+            "Jewish",
+            "Hindu",
+            "Muslim",
+            "Sikh",
+            "Spirtual (Various Zodiacs, Non-dogomatic",
+            "Other"
+        ],
+        "Orientation": [
+            "Heterosexual",
+            "Bisexual/Pansexual (Kinsey Scale Between 2-5)",
+            "Homosexual",
+            "Asexual Spectrum (Including Demisexual"
+        ],
+        "Gender Identity": [
+            "Cisman",
+            "Ciswoman",
+            "Transman",
+            "Transwoman",
+            "Non-binary"
+        ],
+        "Babaloynian Zodiac": [
+            "Aquarius",
+            "Pisces",
+            "Aries",
+            "Taurus",
+            "Gemini",
+            "Cancer",
+            "Leo",
+            "Virgo",
+            "Libra",
+            "Scorpio",
+            "Sagittarius",
+            "Capricorn"
+        ],
+        "Occupation": null,
+        "Education": [
+            "High School Dropout",
+            "Highschool Graduate",
+            "In Trade School",
+            "Trade School Graduate",
+            "In Undergrad",
+            "Undergratuate",
+            "In Graduate School",
+            "Graduate School",
+            "Persuing PhD",
+            "All But Dissertation",
+            "PhD",
+            "Other Professional Degree"
+        ],
+        "Race": [
+            "White",
+            "Black",
+            "Asian/East Asian",
+            "Indian/South Asian",
+            "Latino/Latina",
+            "Middle Eastern (Arabic & Persian included here)",
+            "Indiginous"
+        ],
+        "Height": null,
+        "Diet": [
+            "Omnivore",
+            "Vegitarian",
+            "Flexitarian/Reductionist",
+            "Vegan",
+            "Religious Diet (Kosher, Halal, etc)"
+        ],
+        "Vices": {
+            "Drinks": [
+                "Never",
+                "Rarely",
+                "Moderately/Socially",
+                "Frequently"
+            ],
+            "Cigarettes": [
+                "Never",
+                "Rarely",
+                "Moderately/Socially",
+                "Frequently"
+            ],
+            "Marijuana": [
+                "Never",
+                "Rarely",
+                "Moderately/Socially",
+                "Frequently"
+            ],
+            "Recreation Pills": [
+                "Never",
+                "Rarely",
+                "Moderately/Socially",
+                "Frequently"
+            ]
+        }
+    },
+    "coreQuestions": {
+        "Do you want kids?": [
+            "Don't Want",
+            "Unsure",
+            "Want",
+            "Have & Want More",
+            "Have & Don't Want More"
+        ],
+        "What type of relationship structure are you looking for?": [
+            "Monogamous",
+            "Non-Monogamous",
+            "Open To Any",
+            "Not Seeking A Relationship"
+        ],
+        "What are you relgious convictions, and must a partner have those same convictions?": [
+            "Incredibly Strong && A Partner Must Share",
+            "Incredibly Strong But A Partner Doesn't Need To Share",
+            "Mild Convictions && A Partner Must Share",
+            "Mildy Convictions But A Partner Doesn't Need To Share",
+            "Unsure About my Convictions But A Partner Doesn't Need To Share",
+            "Unsure About my Convictions && A Partner Must Share",
+            "I am not religious && A Partner Must Share",
+            "I am not religious But A Partner Doesn't Need To Share"
+        ],
+        "What is your sex drive": [
+            "High Libedo",
+            "Standard Libedo",
+            "Low Libedo"
+        ],
+        "What is your political Ideology?": [
+            "Lefitst (Communist, Socialist (Including Democratic Socialist, which confusingly is not Bernie Sanders), Anarco_ (excluding Anarchocapitalist))",
+            "Social Democrat (NOT Democratic Socialist. Confusingly, Bernie Sanders' presidential platform is ideaologically Social Democrat and NOT Democratic Socialist. Others include New Deal Democrat, or Scandanivian Model Policies)",
+            "Liberal (American Establishment Democratic ideology)",
+            "Centerist (Unorthodox mixing of American Republican and Democratic platforms",
+            "Libertarian (American Style Libertarian: 'Fiscally Conservative Socially Liberal'",
+            "Conservative (Neoliberal, Neoconservative)",
+            "Nationalist (Select this if you're a straight up scumbag.)"
+        ],
+        "What are your sexual tastes": [
+            "Vanilla",
+            "Somewhat Kinky",
+            "Kinky",
+            "EXTREME Kink"
+        ],
+        "Do you want to settle down where you are currently located?": [
+            "Hell No",
+            "Probably Not",
+            "Unsure",
+            "Probably",
+            "Hell Yeah"
+        ],
+        "What type of area do you want to live long term": [
+            "Urban",
+            "Suburban",
+            "Rural"
+        ]
+    },
+    "auxQuestions": "placeholder"
+}

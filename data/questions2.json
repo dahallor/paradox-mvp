@@ -1,0 +1,50 @@
+{
+    "Foundational" : [
+        "Do you want kids?",
+        "Do you have kids?",
+        "What are you looking for?",
+        "What is your gender identity & pronouns?",
+        "What is your sexual orientation?",
+        "What is your prefered relationship structure? Monogamous or non-monogamous?",
+        "What are you religious/spiritual beliefs?"
+        
+    ],
+    "Structural" : [
+        "What are your political leanings?",
+        "What substances do you use?",
+        "What is your diet?",
+        "Do you want to or have you set down roots where you are currently located?",
+        "What type of place do you want to live? Urban, Suburban, Rurual?",
+        "What is your current relationship status?",
+        "Do you own any pets?",
+        "Are you allergic to pets?",
+        "What is your education level?",
+        "How would you describe your libedo?",
+        "Are your bedroom states more vanilla or kinky?"
+
+    ],
+    "Superficial" :    
+        {"Music" : ["Alternative", "Blues", "Classical", "Country", "Electronic", "Folk", "Hip-Hop", "Rap", "R&B", "Rock", "Indie", "Religious", "Insturmental", "Video Game Music", "Jazz", "J-Pop", "K-pop", "Latin", "Metal", "Pop", "Pop Punk", "Punk","Reggae", "Ska"],
+        "TV" : ["Action", "Adult Animation", "Adventure", "Nature", "Anime", "British", "Comedy", "Cooking", "Crime", "Documentary", "Drama", "Fantasy", "Game Shows", "Horror", "International", "Kids", "Late Night Talkshows", "Mystery", "News", "Reality TV", "Romance", "Sci-Fi", "Sitcom", "Sketch Comedy", "Thriller"],
+        "Film" : ["Action", "Adventure", "Animated", "Comedy", "Drama", "Fantasy", "Historical", "Horror", "Noir", "Sci-Fi", "Thriller", "Western"],
+        "Acedemic" : ["Math", "History", "Philosphy", "Literature", "Psychology"],
+        "Podcasts" : [],
+        "Niche Interests" : ["City Planning"],
+        "Creative" : [{"Art" : ["Painting", "Photography", "Drawing", "Cinametography"]}, "Crafts", {"Musicianship" : ["Guitar", "Vocals", "Keyboard/Piano", "Bass", "Strings", "Percusssions", "Brass", "Woodwinds"]}, "Writings"],
+        "Athletics" : ["Badmitton", "Baseball/Softball", "Basketball", "Bouldering", "Bowling", "Boxing", "Crew", "Cricket", "Cycling", "American Football", "Football/Soccer", "Golf", "Gymnastics", "Hockey", "Horseriding", "Martial Arts", "Pilates", "Yoga", "Rugby", "Ping Pong", "Running", "Skateboarding", "Snowboarding", "Skiing", "Surfing", "Swimming", "Tennis", "Volleyball"],
+        "Books" : [],
+        "Food & Drink" : [],
+        "Out On The Town" : ["Concerts", "Bars", "Clubs", "Festivals", "Theatre", "Karaoke", "Stand up"],
+        "Night In" : ["Cooking", "Video Games", "Baking", "Board Games", "TTRPGs", "Gardening"],
+        "Pets" : ["Birds", "Cats", "Dogs", "Fish", "Lizards", "Rabbits", "Guenea Pigs", "Hampsters", "Ferrets", "Snakes", "Turtles"]
+        },
+    "Flair" : {
+        "Sexual" : [],
+        "Politics" : [],
+        "Religion/Spirituality" : [],
+        "Dating" : [],
+        "Ethics" : [],
+        "Lifestyle" : []
+    }
+
+}
