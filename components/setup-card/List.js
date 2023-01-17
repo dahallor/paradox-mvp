@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'pink',
         alignItems: 'center',
         justifyContent: 'center',
+        width: '100%'
     },
     item: {
         padding: 10,

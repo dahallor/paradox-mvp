@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'gray',
         alignItems: 'center',
         justifyContent: 'center',
+        width: '100%'
     },
     title: {
         fontSize: 28

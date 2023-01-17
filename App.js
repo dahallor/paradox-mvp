@@ -2,13 +2,14 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import SetupCard from './components/setup-card/SetupCard';
 import UserSetupScreen from './screens/UserSetupScreen';
+import Profile from './components/profile/Profile';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      {/*<UserSetupScreen /> */}
+      {/* <UserSetupScreen /> */}
       <SetupCard />
-
+      {/* <Profile /> */}
     </View>
   );
 }
@@ -16,7 +17,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'lightgray',
+    backgroundColor: 'lightblue',
     alignItems: 'center',
     justifyContent: 'center',
   },
