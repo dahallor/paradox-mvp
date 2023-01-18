@@ -4,39 +4,65 @@ import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native
 //TODO: fix markers
 //TODO: sync to json server
 //TODO: formatting obviously
-//TODO: add submit and back buttons
+//TODO: make direction buttons unclickable if all makers are empty
 
-export default function Checklist() {
-    const [checkbox, setCheckbox] = useState(
-        { id: 1 },
-        { id: 2 },
-        { id: 3 },
-        { id: 4 }
-    )
-    const [marker, setMarker] = useState(null)
-    const options = ['Very Important', 'Important', 'Somewhat Important', 'Not Important']
-    function pressHandler(option, checkbox) {
-        setMarker("")
-        for (let i = 0; i < 4; i++) {
-            if (option === 'Very Important') {
-                setMarker("")
-                if (checkbox.id == 1) {
-                    setMarker("X")
-                }
-            }
-        }
+export default function Checklist(props) {
+    const [marker1, setMarker1] = useState("")
+    const [marker2, setMarker2] = useState("")
+    const [marker3, setMarker3] = useState("")
+    const [marker4, setMarker4] = useState("")
 
+    function clearMarkers() {
+        setMarker1("")
+        setMarker2("")
+        setMarker3("")
+        setMarker4("")
+    }
+
+    function pressHandler(setMarker) {
+        clearMarkers()
+        setMarker("X")
+    }
+
+    function directionHandler(direction) {
+        //TODO: sync to api endpoints
+        props.direction(direction)
+        clearMarkers()
     }
     return (
         <View style={styles.container}>
-            {options.map(option => (
-                <View key={(option)} style={styles.line}>
-                    <TouchableOpacity onPress={() => pressHandler(option, checkbox)} style={styles.checkbox}>
-                        <Text style={styles.marker}>{marker}</Text>
-                    </TouchableOpacity>
-                    <Text>     {option}</Text>
-                </View>
-            ))}
+            <View style={styles.line}>
+                <TouchableOpacity style={styles.checkbox}>
+                    <Text style={styles.marker} onPress={() => pressHandler(setMarker1)}>{marker1}</Text>
+                </TouchableOpacity>
+                <Text>    Very Important</Text>
+            </View>
+            <View style={styles.line}>
+                <TouchableOpacity style={styles.checkbox}>
+                    <Text style={styles.marker} onPress={() => pressHandler(setMarker2)}>{marker2}</Text>
+                </TouchableOpacity>
+                <Text>    Important</Text>
+            </View>
+            <View style={styles.line}>
+                <TouchableOpacity style={styles.checkbox}>
+                    <Text style={styles.marker} onPress={() => pressHandler(setMarker3)}>{marker3}</Text>
+                </TouchableOpacity>
+                <Text>    Somewhat Important</Text>
+            </View>
+            <View style={styles.line}>
+                <TouchableOpacity style={styles.checkbox}>
+                    <Text style={styles.marker} onPress={() => pressHandler(setMarker4)}>{marker4}</Text>
+                </TouchableOpacity>
+                <Text>    Not Important</Text>
+            </View>
+            <View style={styles.line}>
+                <TouchableOpacity style={styles.directionbox}>
+                    <Text style={styles.marker} onPress={() => directionHandler("BACK")}>BACK</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.directionbox}>
+                    <Text style={styles.marker} onPress={() => directionHandler("SUBMIT")}>SUBMIT</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     );
 }
@@ -56,14 +82,17 @@ const styles = StyleSheet.create({
         borderColor: 'black',
         justifyContent: 'flex-start'
     },
+    directionbox: {
+        width: 60,
+        height: 25,
+        borderWidth: 2,
+        borderColor: 'black',
+        justifyContent: 'space-between'
+    },
     line: {
         flexDirection: 'row',
         backgroundColor: 'gold',
         padding: 10,
         margin: 5
-    },
-    marker: {
-        alignItems: 'center',
-        justifyContent: 'center'
     }
 })

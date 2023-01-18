@@ -1,36 +1,22 @@
-import React, { useState } from 'react'
 import { StyleSheet, Text, View, FlatList, TouchableHighlight } from 'react-native';
 
 
-export default function List() {
-    const [placeholder, setPlaceholder] = useState([
-        { key: '1', text: "yes" },
-        { key: '2', text: "no" },
-        { key: '3', text: "scroll bitch" },
-        { key: '4', text: "scroll bitch" },
-        { key: '5', text: "scroll bitch" },
-        { key: '6', text: "scroll bitch" },
-        { key: '7', text: "scroll bitch" },
-        { key: '8', text: "scroll bitch" },
-        { key: '9', text: "scroll bitch" },
-        { key: '10', text: "scroll bitch" },
-        { key: '11', text: "scroll bitch" },
-        { key: '12', text: "scroll bitch" },
-        { key: '13', text: "scroll bitch" },
-        { key: '14', text: "scroll bitch" },
-        { key: '15', text: "scroll bitch" }
-    ])
+export default function List(props) {
+    if (props.data.length === 1) {
+        props.data.key = 1
+        console.log(props.data.length)
+    }
 
-    const pressHandler = (key) => {
-        console.log(key)
+    function changeColor() {
+        //console.log(styles.container.backgroundColor)
     }
 
     return (
         <View style={styles.container}>
             <FlatList
-                data={placeholder}
+                data={props.data}
                 renderItem={({ item }) => (
-                    <TouchableHighlight onPress={() => pressHandler(item.key)}>
+                    <TouchableHighlight underlayColor='purple' onShowUnderlay={() => changeColor()} onPress={() => props.changeSelection(item)}>
                         <Text style={styles.item}>{item.text}</Text>
                     </TouchableHighlight>
 
@@ -51,6 +37,5 @@ const styles = StyleSheet.create({
     },
     item: {
         padding: 10,
-        underlayColor: 'purple'
-    }
+    },
 });

@@ -1,5 +1,8 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+//TODO: sync to JSON server
+//TODO: make a stack naviagator
+
 export default function Title() {
     return (
         <View style={styles.titleContainer}>
