@@ -1,16 +1,19 @@
 {
     "eros-matches": [
         {
+            "key": 1,
             "date": "date",
-            "match-name": "match name",
+            "matchName": "match name",
             "uuid": "uuid"
         },
         {
+            "key": 2,
             "date": "date",
-            "match-name": "match name",
+            "matchName": "match name",
             "uuid": "uuid"
         },
         {
+            "key": 3,
             "date": "date",
             "match-name": "match name",
             "uuid": "uuid"
@@ -19,17 +22,17 @@
     "ludos-matches": [
         {
             "date": "date",
-            "match-name": "match name",
+            "matchName": "match name",
             "uuid": "uuid"
         },
         {
             "date": "date",
-            "match-name": "match name",
+            "matchName": "match name",
             "uuid": "uuid"
         },
         {
             "date": "date",
-            "match-name": "match name",
+            "matchName": "match name",
             "uuid": "uuid"
         }
     ],

@@ -1,10 +1,21 @@
+//DEPRICATED
+
+
+
+
+
+
+
+
+
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { TouchableOpacity } from 'react-native';
 import ErosScreen from '../../screens/ErosScreen';
 import LudosScreen from '../../screens/LudosScreen';
 import PhilaScreen from '../../screens/PhilaScreen';
 
 
-//TODO: add component to naivagator
+//TODO: depricated. I want to extract to here but tabs cant pass back functions. If i find a work around abstract it here
 
 const Tab = createMaterialTopTabNavigator();
 
