@@ -3,7 +3,7 @@ import ProfileHeader from '../../components/profile/ProfileHeader'
 import DisplayAnswers from '../../components/profile/DisplayAnswers';
 import Textbox from '../../components/profile/Textbox';
 
-
+//TODO: Implement stack naviagator between profile header and chat page
 
 export default function ProfileScreen() {
     //First box is for demographics, second for core questions, third for top hobbies
@@ -25,6 +25,5 @@ const styles = StyleSheet.create({
         backgroundColor: 'orange',
         alignItems: 'center',
         justifyContent: 'center',
-        width: '95%'
     }
 })

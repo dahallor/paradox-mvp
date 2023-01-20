@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'blue',
         alignItems: 'center',
         justifyContent: 'center',
-        width: '95%'
+        width: '100%'
     },
     item: {
         backgroundColor: 'purple',

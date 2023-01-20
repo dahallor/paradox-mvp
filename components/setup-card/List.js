@@ -15,6 +15,8 @@ export default function List(props) {
         <View style={styles.container}>
             <FlatList
                 data={props.data}
+                // inverted={true}
+                //check to see if this is right syntax
                 renderItem={({ item }) => (
                     <TouchableHighlight underlayColor='purple' onShowUnderlay={() => changeColor()} onPress={() => props.changeSelection(item)}>
                         <Text style={styles.item}>{item.text}</Text>
