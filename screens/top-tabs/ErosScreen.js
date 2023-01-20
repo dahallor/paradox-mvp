@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
-import DisplayMatches from '../components/home/DisplayMatches';
+import DisplayMatches from '../../components/home/DisplayMatches';
 
 export default function ErosScreen() {
-    const data = require('../data/matches.json')
+    const data = require('../../data/matches.json')
     console.log(data['eros-matches'])
 
     return (

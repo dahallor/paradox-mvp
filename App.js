@@ -1,17 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import SetupCard from './components/setup-card/SetupCard';
-import UserSetupScreen from './screens/UserSetupScreen';
-import Profile from './components/profile/Profile';
-import { NavigationContainer } from '@react-navigation/native';
-import HomeScreen from './screens/HomeScreen';
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+
+import HomeScreen from './screens/bottom-tabs/HomeScreen';
+import ProfileScreen from './screens/bottom-tabs/ProfileScreen';
+import SearchScreen from './screens/bottom-tabs/SearchScreen';
+import SettingsScreen from './screens/bottom-tabs/SettingsScreen';
+import UserSetupScreen from './screens/drill-down/UserSetupScreen';
 
 //TODO: Add conditional Rendering to bring either homescreen or login screen based on auth boolean
 export default function App() {
+
+  const Tab = createMaterialBottomTabNavigator();
+
+
   return (
     <NavigationContainer style={styles.container}>
-      <HomeScreen />
+      <UserSetupScreen />
+      {/* <Tab.Navigator>
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Profile" component={ProfileScreen} />
+        <Tab.Screen name="Search" component={SearchScreen} />
+        <Tab.Screen name="Settings" component={SettingsScreen} />
+      </Tab.Navigator> */}
     </NavigationContainer>
   );
 }

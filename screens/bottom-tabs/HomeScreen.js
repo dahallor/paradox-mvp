@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
-import Header from '../shared/Header';
-import ErosScreen from '../../screens/ErosScreen';
-import LudosScreen from '../../screens/LudosScreen';
-import PhilaScreen from '../../screens/PhilaScreen';
+import Header from '../../components/shared/Header'
+import ErosScreen from '../top-tabs/ErosScreen'
+import LudosScreen from '../top-tabs/LudosScreen';
+import PhilaScreen from '../top-tabs/PhilaScreen';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-export default function Home() {
+export default function HomeScreen() {
     const Tab = createMaterialTopTabNavigator();
     const [color, setColor] = useState('darkblue')
     return (

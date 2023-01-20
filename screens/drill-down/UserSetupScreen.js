@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
-import Title from './Title'
-import List from './List'
-import Checklist from './Checkbox';
+import Title from '../../components/setup-card/Title'
+import List from '../../components/setup-card/List'
+import Checklist from '../../components/setup-card/Checkbox';
 
 //TODO: styling here for text is hard coded seperate from list so fix that at some point
 
 
-export default function SetupCard() {
+export default function UserSetupScreen() {
     const [selection, setSelection] = useState(null)
     const [direction, setDirection] = useState(null)
     const [questions, setQuestions] = useState(null)

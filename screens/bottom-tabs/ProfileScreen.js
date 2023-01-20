@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
-import ProfileHeader from './ProfileHeader';
-import DisplayAnswers from './DisplayAnswers';
-import Textbox from './Textbox';
+import ProfileHeader from '../../components/profile/ProfileHeader'
+import DisplayAnswers from '../../components/profile/DisplayAnswers';
+import Textbox from '../../components/profile/Textbox';
 
 
-export default function Profile() {
+
+export default function ProfileScreen() {
     //First box is for demographics, second for core questions, third for top hobbies
     return (
         <View style={styles.container}>

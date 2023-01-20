@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 
 export default function ProfileHeader() {
-    const name = "Marni"
+    const name = "Generic Thot Name"
     return (
         <View style={styles.container}>
             <Text style={styles.name}>{name}</Text>
