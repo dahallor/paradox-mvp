@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, FlatList, TouchableOpacity, TouchableWithoutFeedback } from 'react-native';
 
 //TODO: fix markers
 //TODO: sync to json server
 //TODO: formatting obviously
-//TODO: make direction buttons unclickable if all makers are empty
+//TODO: Fix condition styling of invalid buttons, functionality should be working though as it goes nowhere onclick
+//TODO: Change conditinoal to always make back button valid
+
 
 export default function Checklist(props) {
     const [marker1, setMarker1] = useState("")
@@ -56,12 +58,25 @@ export default function Checklist(props) {
                 <Text>    Not Important</Text>
             </View>
             <View style={styles.line}>
-                <TouchableOpacity style={styles.directionbox}>
-                    <Text style={styles.marker} onPress={() => directionHandler("BACK")}>BACK</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.directionbox}>
-                    <Text style={styles.marker} onPress={() => directionHandler("SUBMIT")}>SUBMIT</Text>
-                </TouchableOpacity>
+                {marker1 !== "" || marker2 !== "" || marker3 !== "" || marker4 !== "" ?
+                    <>
+                        <TouchableOpacity style={styles.directionBoxValid}>
+                            <Text style={styles.marker} onPress={() => directionHandler("BACK")}>BACK</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.directionBoxValid}>
+                            <Text style={styles.marker} onPress={() => directionHandler("SUBMIT")}>SUBMIT</Text>
+                        </TouchableOpacity>
+                    </>
+                    :
+                    <>
+                        <TouchableWithoutFeedback style={styles.directionBoxInvalid}>
+                            <Text style={styles.marker}>BACK</Text>
+                        </TouchableWithoutFeedback>
+                        <TouchableWithoutFeedback style={styles.directionBoxInvalid}>
+                            <Text style={styles.marker}>SUBMIT</Text>
+                        </TouchableWithoutFeedback>
+                    </>
+                }
             </View>
         </View>
     );
@@ -82,7 +97,14 @@ const styles = StyleSheet.create({
         borderColor: 'black',
         justifyContent: 'flex-start'
     },
-    directionbox: {
+    directionBoxValid: {
+        width: 60,
+        height: 25,
+        borderWidth: 2,
+        borderColor: 'black',
+        justifyContent: 'space-between'
+    },
+    directionBoxInvalid: {
         width: 60,
         height: 25,
         borderWidth: 2,

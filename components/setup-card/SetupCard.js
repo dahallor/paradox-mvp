@@ -30,7 +30,7 @@ export default function SetupCard() {
     ])
 
     function reset(direction) {
-        console.log("reset")
+        console.log("reset", direction)
         if (direction === "BACK") {
             //do stuff
         }

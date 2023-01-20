@@ -21,7 +21,7 @@
             "Heterosexual",
             "Bisexual/Pansexual (Kinsey Scale Between 2-5)",
             "Homosexual",
-            "Asexual Spectrum (Including Demisexual"
+            "Asexual Spectrum (Including Demisexual)"
         ],
         "Gender Identity": [
             "Cisman",
@@ -104,6 +104,24 @@
         }
     },
     "coreQuestions": {
+        "What are you looking for?": [
+            [
+                "Marriage",
+                null
+            ],
+            [
+                "Long Term Dating",
+                null
+            ],
+            [
+                "Short Term Dating",
+                "For all your situationship or casual dating needs"
+            ],
+            [
+                "Hookup",
+                "No feelings, just sex"
+            ]
+        ],
         "Do you want kids?": [
             "Don't Want",
             "Unsure",
@@ -112,10 +130,22 @@
             "Have & Don't Want More"
         ],
         "What type of relationship structure are you looking for?": [
-            "Monogamous",
-            "Non-Monogamous",
-            "Open To Any",
-            "Not Seeking A Relationship"
+            [
+                "Monogamous",
+                "No other romantic or sexual partners what so ever"
+            ],
+            [
+                "Non-Monogamous",
+                "Umbrella term. Could mean swinging to polyamory to relationship anarchy. Talk to your match about it!"
+            ],
+            [
+                "Open To Any",
+                "Don't care but want a rellationship"
+            ],
+            [
+                "Not Seeking A Relationship",
+                "Don't care and don't want a relationship"
+            ]
         ],
         "What are you relgious convictions, and must a partner have those same convictions?": [
             "Incredibly Strong && A Partner Must Share",
@@ -128,16 +158,28 @@
             "I am not religious But A Partner Doesn't Need To Share"
         ],
         "What is your sex drive": [
-            "High Libedo",
-            "Standard Libedo",
-            "Low Libedo"
+            [
+                "High Libedo",
+                "Ideally being intimate 4+ times a week"
+            ],
+            [
+                "Standard Libedo",
+                "Ideally being intimate 1-3 times a week"
+            ],
+            [
+                "Low Libedo",
+                "Ideally being intimate less than 1 time a week or not at all"
+            ]
         ],
         "What is your political Ideology?": [
-            "Lefitst (Communist, Socialist (Including Democratic Socialist, which confusingly is not Bernie Sanders), Anarco_ (excluding Anarchocapitalist))",
+            [
+                "Lefitst",
+                "Communist, Socialist, Anarco-anything (excluding Anarchocapitalist). If you identify with Bernie Sanders as the ideal world, please select Social Democrat"
+            ],
             "Social Democrat (NOT Democratic Socialist. Confusingly, Bernie Sanders' presidential platform is ideaologically Social Democrat and NOT Democratic Socialist. Others include New Deal Democrat, or Scandanivian Model Policies)",
             "Liberal (American Establishment Democratic ideology)",
             "Centerist (Unorthodox mixing of American Republican and Democratic platforms",
-            "Libertarian (American Style Libertarian: 'Fiscally Conservative Socially Liberal'",
+            "Libertarian (American Style Libertarian: 'Fiscally Conservative Socially Liberal'. Not to be confused with the original meaning of the word, which described libertarian socialists",
             "Conservative (Neoliberal, Neoconservative)",
             "Nationalist (Select this if you're a straight up scumbag.)"
         ],
@@ -155,8 +197,9 @@
             "Hell Yeah"
         ],
         "What type of area do you want to live long term": [
-            "Urban",
+            "Big City Urban",
             "Suburban",
+            "Small Town Urban",
             "Rural"
         ]
     },

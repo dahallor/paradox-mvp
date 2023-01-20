@@ -1,0 +1,53 @@
+{
+    "eros-matches": [
+        {
+            "date": "date",
+            "match-name": "match name",
+            "uuid": "uuid"
+        },
+        {
+            "date": "date",
+            "match-name": "match name",
+            "uuid": "uuid"
+        },
+        {
+            "date": "date",
+            "match-name": "match name",
+            "uuid": "uuid"
+        }
+    ],
+    "ludos-matches": [
+        {
+            "date": "date",
+            "match-name": "match name",
+            "uuid": "uuid"
+        },
+        {
+            "date": "date",
+            "match-name": "match name",
+            "uuid": "uuid"
+        },
+        {
+            "date": "date",
+            "match-name": "match name",
+            "uuid": "uuid"
+        }
+    ],
+    "phila-matches": [
+        {
+            "date": "date",
+            "match-name": "match name",
+            "uuid": "uuid"
+        },
+        {
+            "date": "date",
+            "match-name": "match name",
+            "uuid": "uuid"
+        },
+        {
+            "date": "date",
+            "match-name": "match name",
+            "uuid": "uuid"
+        }
+    ]
+}
