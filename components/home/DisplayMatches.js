@@ -7,10 +7,11 @@ export default function DisplayMatches({ matches }) {
     return (
         <View style={styles.container}>
             <FlatList
-                style={styles.list}
+
                 data={matches}
+                inverted={true}
                 renderItem={({ item }) =>
-                    <TouchableOpacity>
+                    <TouchableOpacity style={styles.list}>
                         <Text>{item.date} | {item.matchName}</Text>
                     </TouchableOpacity>
                 }
@@ -23,5 +24,14 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'gold',
+        padding: 100,
+        margin: 25
     },
+    list: {
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+        borderWidth: 1,
+        padding: 5,
+        margin: 5
+    }
 })

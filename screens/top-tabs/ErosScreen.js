@@ -1,6 +1,8 @@
 import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import DisplayMatches from '../../components/home/DisplayMatches';
 
+
+//TODO: wrap JSON data in API endpoints 
 export default function ErosScreen() {
     const data = require('../../data/matches.json')
     console.log(data['eros-matches'])
@@ -17,6 +19,8 @@ export default function ErosScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'green'
+        backgroundColor: 'green',
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 })

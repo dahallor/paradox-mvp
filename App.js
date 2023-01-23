@@ -8,8 +8,9 @@ import ProfileScreen from './screens/bottom-tabs/ProfileScreen';
 import SearchScreen from './screens/bottom-tabs/SearchScreen';
 import SettingsScreen from './screens/bottom-tabs/SettingsScreen';
 import StoreScreen from './screens/bottom-tabs/StoreScreen';
-import UserSetupScreen from './screens/drill-down/UserSetupScreen';
 
+import UserSetupScreen from './screens/drill-down/UserSetupScreen';
+import ChatScreen from './screens/drill-down/ChatScreen';
 
 //TODO: Add conditional Rendering to bring either homescreen or login screen based on auth boolean
 export default function App() {
@@ -19,7 +20,8 @@ export default function App() {
 
   return (
     <NavigationContainer style={styles.container}>
-      {/* <UserSetupScreen /> */}
+      {/* <ChatScreen />
+      <UserSetupScreen /> */}
       <Tab.Navigator>
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
