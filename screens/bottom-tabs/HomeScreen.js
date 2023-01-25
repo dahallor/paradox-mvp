@@ -13,11 +13,7 @@ export default function HomeScreen() {
     return (
         <View style={styles.container}>
             <Header color={color} />
-            <Tab.Navigator>
-                <Tab.Screen name="Eros" component={ErosScreen} />
-                <Tab.Screen name="Ludos" component={LudosScreen} />
-                <Tab.Screen name="Phila" component={PhilaScreen} />
-            </Tab.Navigator>
+
         </View>
     );
 }
