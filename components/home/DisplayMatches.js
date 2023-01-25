@@ -1,17 +1,18 @@
+import { useNavigation } from "@react-navigation/native";
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, Touchable } from "react-native";
 
-//TODO: iterate through list backwards so newest match is at the top
+//TODO: make things top oriented when list is reversed
 
-export default function DisplayMatches({ matches }) {
-    console.log(matches)
+export default function DisplayMatches(props) {
+
     return (
         <View style={styles.container}>
             <FlatList
 
-                data={matches}
+                data={props.matches}
                 inverted={true}
                 renderItem={({ item }) =>
-                    <TouchableOpacity style={styles.list}>
+                    <TouchableOpacity style={styles.list} onPress={() => props.getUUID(item.uuid)}>
                         <Text>{item.date} | {item.matchName}</Text>
                     </TouchableOpacity>
                 }

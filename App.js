@@ -1,3 +1,6 @@
+import 'react-native-gesture-handler';
+//This has to be the topline import for some reason
+
 import { StyleSheet, Text, View } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -16,6 +19,7 @@ import ChatScreen from './screens/drill-down/ChatScreen';
 export default function App() {
 
   const Tab = createMaterialBottomTabNavigator();
+
 
 
   return (

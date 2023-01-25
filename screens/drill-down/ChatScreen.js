@@ -1,10 +1,14 @@
 import { StyleSheet, View, Text } from "react-native";
-
+import ChatHeader from "../../components/chat-log/ChatHeader";
+import ChatLog from "../../components/chat-log/ChatLog";
+import ChatFooter from "../../components/chat-log/ChatFooter";
 
 export default function ChatScreen() {
     return (
         <View style={styles.container}>
-            <Text>Chat Stub</Text>
+            <ChatHeader />
+            <ChatLog />
+            <ChatFooter />
         </View>
     );
 }

@@ -1,3 +1,36 @@
 {
-    "uuid"
+    "dummyUUID": [
+        {
+            "key": 1,
+            "message": "This is some text",
+            "client": false
+        },
+        {
+            "key": 2,
+            "message": "This is some more text",
+            "client": true
+        },
+        {
+            "key": 3,
+            "message": "I am glad we had this talk",
+            "client": false
+        }
+    ],
+    "wrongUUID": [
+        {
+            "key": 1,
+            "message": "I hope this doesn't show up",
+            "client": false
+        },
+        {
+            "key": 2,
+            "message": "Yeah that would be bad",
+            "client": true
+        },
+        {
+            "key": 3,
+            "message": "If you see this, it means you're not parsing the onPress correctly silly goose!",
+            "client": false
+        }
+    ]
 }
