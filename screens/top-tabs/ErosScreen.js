@@ -1,30 +1,28 @@
+import { useNavigation } from '@react-navigation/core';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import DisplayMatches from '../../components/home/DisplayMatches';
-import ChatScreen from '../drill-down/ChatScreen';
-import ErosStack from '../../routes/ErosStack';
+
+import ChatNav from '../../routes/ChatNav'
 
 //TODO: wrap JSON data in API endpoints 
-export default function ErosScreen({ navigation }) {
+export default function ErosScreen() {
     const data = require('../../data/matches.json')
+    const navigation = useNavigation()
+
     const [uuid, setUUID] = useState(null)
-    console.log(uuid)
-    console.log(navigation.navigate)
-    console.log(ErosStack.ChatScreen)
 
     function goToChat(uuid) {
         setUUID(uuid)
-        navigation.navigate('ErosStack', {
-            screen: 'ChatScreen',
-            params: { uuid: uuid },
-        })
+        console.log(uuid)
+        navigation.navigate('ChatScreen')
 
     }
 
     return (
         <View style={styles.container}>
             <Text>For Love</Text>
-            <DisplayMatches matches={data['eros-matches']} type={"eros"} getUUID={uuid => goToChat(uuid)} />
+            <DisplayMatches matches={data['eros-matches']} type={"eros"} getUUID={uuid => navigation.navigate('ChatNav', { id: uuid })} />
         </View>
 
     );
