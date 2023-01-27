@@ -26,16 +26,7 @@ export default function ChatNav(props) {
     return (
         <Stack.Navigator initialRouteName="Home">
             <Stack.Screen name="Home-ChatNav" component={HomeNav} />
-            <Stack.Screen
-                name="Chat"
-                component={ChatScreen}
-                options={{
-                    headerTitle: () =>
-                        <TouchableOpacity onPress={() => doStuff()}>
-                            <Text>placeholder</Text>
-                        </TouchableOpacity>
-
-                }} />
+            <Stack.Screen name="Chat" component={ChatScreen} />
             <Stack.Screen name="Profile" component={ProfileScreen} />
         </Stack.Navigator>
     )

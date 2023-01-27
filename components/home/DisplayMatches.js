@@ -5,14 +5,8 @@ import ErosStack from "../../routes/ErosStack";
 
 //TODO: make things top oriented when list is reversed
 
-export default function DisplayMatches(props, item) {
+export default function DisplayMatches(props) {
 
-    function referInfoToParent(props, matchName, uuid) {
-        props.getName(matchName)
-        props.getUUID(uuid)
-        props.getNavFlag(true)
-
-    }
 
     return (
         <View style={styles.container}>
@@ -20,7 +14,11 @@ export default function DisplayMatches(props, item) {
                 data={props.matches}
                 inverted={true}
                 renderItem={({ item }) =>
-                    <TouchableOpacity style={styles.list} onPress={() => referInfoToParent(props, item.matchName, item.uuid)}>
+                    <TouchableOpacity style={styles.list} onPress={() => props.navigation.navigate('Chat',
+                        {
+                            matchName: item.matchName,
+                            uuid: item.uuid
+                        })}>
                         <Text>{item.date} | {item.matchName}</Text>
                     </TouchableOpacity>
                 }
