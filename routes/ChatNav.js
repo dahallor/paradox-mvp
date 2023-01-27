@@ -8,23 +8,31 @@ import ChatScreen from "../screens/drill-down/ChatScreen";
 import ProfileScreen from "../screens/bottom-tabs/ProfileScreen";
 import HomeNav from '../routes/HomeNav'
 import { TouchableOpacity } from "react-native-gesture-handler";
+import { useRoute } from "@react-navigation/core";
 
 
 
 export default function ChatNav(props) {
     const Stack = createStackNavigator()
 
+    console.log('ChatNav')
+    console.log(props.route)
+
+    function doStuff() {
+        props.navigation.navigate('Profile')
+
+    }
+
     return (
-        <Stack.Navigator initialRouteName="Debug">
-            {/* <Stack.Screen name="Home" component={HomeScreen} /> */}
-            <Stack.Screen name="Debug" component={DebugScreen} />
+        <Stack.Navigator initialRouteName="Home">
+            <Stack.Screen name="Home-ChatNav" component={HomeNav} />
             <Stack.Screen
                 name="Chat"
                 component={ChatScreen}
                 options={{
                     headerTitle: () =>
-                        <TouchableOpacity onPress={() => props.navigation.navigate('Profile')}>
-                            <Text>Match Name</Text>
+                        <TouchableOpacity onPress={() => doStuff()}>
+                            <Text>placeholder</Text>
                         </TouchableOpacity>
 
                 }} />

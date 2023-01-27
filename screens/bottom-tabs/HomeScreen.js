@@ -11,8 +11,7 @@ export default function HomeScreen() {
     // function selectionHandler(uuid)
     return (
         <View style={styles.container}>
-            <Header color={'darkblue'} />
-            <HomeNav />
+            {/* <HomeNav /> */}
         </View>
     );
 }

@@ -1,20 +1,26 @@
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, Touchable } from "react-native";
 import ChatNav from "../../routes/ChatNav";
+import ErosStack from "../../routes/ErosStack";
 
 //TODO: make things top oriented when list is reversed
 
-export default function DisplayMatches(props) {
-    const navigation = useNavigation();
+export default function DisplayMatches(props, item) {
+
+    function referInfoToParent(props, matchName, uuid) {
+        props.getName(matchName)
+        props.getUUID(uuid)
+        props.getNavFlag(true)
+
+    }
+
     return (
         <View style={styles.container}>
             <FlatList
-
                 data={props.matches}
                 inverted={true}
                 renderItem={({ item }) =>
-                    <TouchableOpacity style={styles.list} onPress={() => navigation.navigate('ChatNav', { screen: 'ChatScreen' })}>
-                        {/* <TouchableOpacity style={styles.list} onPress={() => props.getUUID(item.uuid)}> */}
+                    <TouchableOpacity style={styles.list} onPress={() => referInfoToParent(props, item.matchName, item.uuid)}>
                         <Text>{item.date} | {item.matchName}</Text>
                     </TouchableOpacity>
                 }

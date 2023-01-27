@@ -4,7 +4,6 @@ import { StyleSheet, Text, View, FlatList, TouchableHighlight } from 'react-nati
 export default function List(props) {
     if (props.data.length === 1) {
         props.data.key = 1
-        console.log(props.data.length)
     }
 
     function changeColor() {

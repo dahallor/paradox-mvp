@@ -30,7 +30,7 @@ export default function UserSetupScreen() {
     ])
 
     function reset(direction) {
-        console.log("reset", direction)
+
         if (direction === "BACK") {
             //do stuff
         }

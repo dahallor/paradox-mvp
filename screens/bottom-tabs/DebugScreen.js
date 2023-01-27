@@ -6,10 +6,18 @@ import ChatScreen from "../drill-down/ChatScreen";
 
 export default function DebugScreen({ navigation }) {
 
+    function doStuff() {
+        navigation.setParams({ matchName: "Custom Match Name" })
+        navigation.navigate('Chat',
+            {
+                matchName: "Param Match Name"
+            })
+    }
+
     return (
         <View style={styles.container}>
             <Text>Debug Stub</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('Chat')}>
+            <TouchableOpacity onPress={() => doStuff()}>
                 <Text>Click Here to go to chat</Text>
             </TouchableOpacity>
         </View>

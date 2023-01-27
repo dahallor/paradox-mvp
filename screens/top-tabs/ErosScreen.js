@@ -1,28 +1,35 @@
-import { useNavigation } from '@react-navigation/core';
+import { useNavigation, useRoute } from '@react-navigation/core';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import DisplayMatches from '../../components/home/DisplayMatches';
 
-import ChatNav from '../../routes/ChatNav'
 
-//TODO: wrap JSON data in API endpoints 
-export default function ErosScreen() {
+//TODO: wrap JSON data in API endpoints
+//TODO: add a function callback that intialates the navigation on button press from child 
+export default function ErosScreen({ navigation, route }) {
     const data = require('../../data/matches.json')
-    const navigation = useNavigation()
-
+    const [name, setName] = useState(null)
     const [uuid, setUUID] = useState(null)
+    const [navFlag, setNavFlag] = useState(false)
 
-    function goToChat(uuid) {
-        setUUID(uuid)
-        console.log(uuid)
-        navigation.navigate('ChatScreen')
+    function doStuff(navFlag) {
+        if (navFlag === true) {
+            setNavFlag(false)
+            navigation.setParams({
+                matchName: name,
+                uuid: uuid
+            })
+            console.log("Eros")
+            console.log(route)
+            navigation.navigate('Chat')
 
+        }
     }
 
     return (
         <View style={styles.container}>
             <Text>For Love</Text>
-            <DisplayMatches matches={data['eros-matches']} type={"eros"} getUUID={uuid => navigation.navigate('ChatNav', { id: uuid })} />
+            <DisplayMatches matches={data['eros-matches']} type={"eros"} getName={name => setName(name)} getUUID={uuid => setUUID(uuid)} getNavFlag={navFlag => doStuff(navFlag)} />
         </View>
 
     );
