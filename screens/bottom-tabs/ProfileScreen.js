@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native'
+import { useRoute } from '@react-navigation/core'
 import ProfileHeader from '../../components/profile/ProfileHeader'
 import DisplayAnswers from '../../components/profile/DisplayAnswers';
 import Textbox from '../../components/profile/Textbox';
@@ -7,6 +8,9 @@ import Textbox from '../../components/profile/Textbox';
 
 export default function ProfileScreen() {
     //First box is for demographics, second for core questions, third for top hobbies
+    const route = useRoute()
+    console.log(route)
+    console
     return (
         <View style={styles.container}>
             <ProfileHeader />

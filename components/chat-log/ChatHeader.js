@@ -10,7 +10,10 @@ export default function ChatHeader() {
     return (
         navigation.setOptions({
             headerTitle: () =>
-                <TouchableOpacity onPress={() => navigation.navigate('Profile')} >
+                <TouchableOpacity onPress={() => navigation.navigate('Profile', {
+                    matchName: route.params.matchName,
+                    uuid: route.params.uuid
+                })} >
                     <Text>{name}</Text>
                 </TouchableOpacity>
         })
