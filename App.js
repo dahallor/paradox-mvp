@@ -8,16 +8,22 @@ import { NavigationContainer } from '@react-navigation/native';
 
 
 import RootNav from './routes/RootNav';
-import UserSetupScreen from './screens/drill-down/UserSetupScreen';
-import ChatScreen from './screens/drill-down/ChatScreen';
+import SetupNav from './routes/SetupNav';
 
 //TODO: Add conditional Rendering to bring either homescreen or login screen based on auth boolean
 //is logged in? no = login yes = has profile? yes = home no = usersetup
 export default function App() {
+  let userData = require('./data/user-profile.json')
+
 
   return (
     <NavigationContainer style={styles.container}>
-      <RootNav />
+      {userData.isLoggedIn === true ?
+        <RootNav />
+        :
+        <SetupNav />
+      }
+
     </NavigationContainer>
   );
 }

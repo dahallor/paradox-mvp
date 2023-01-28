@@ -1,8 +1,13 @@
 {
-    "settings": [
+    "logistics": [
         {
             "username": "example@email.com",
             "hasUserProfile": false,
+            "uuid": "uuid"
+        }
+    ],
+    "settings": [
+        {
             "last-known-coordinates": null,
             "blocked-coordinates": null
         }

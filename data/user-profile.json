@@ -1,0 +1,31 @@
+{
+    "userInfo": [
+        {
+            "username": "example@email.com",
+            "hasUserProfile": false,
+            "isLoggedIn": true,
+            "uuid": "uuid"
+        }
+    ],
+    "settings": [
+        {
+            "last-known-coordinates": null,
+            "blocked-coordinates": null
+        }
+    ],
+    "usersDemographics": [
+        {}
+    ],
+    "userCoreAnswers": [
+        {}
+    ],
+    "userHobbies": [
+        {}
+    ],
+    "userAuxAnswers": [
+        {}
+    ],
+    "userAboutMe": [
+        {}
+    ]
+}

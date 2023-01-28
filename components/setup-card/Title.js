@@ -3,12 +3,13 @@ import { StyleSheet, Text, View } from 'react-native';
 //TODO: sync to JSON server
 //TODO: make a stack naviagator
 
-export default function Title() {
+export default function Title(props) {
+    console.log(props.title[0])
     return (
         <View style={styles.titleContainer}>
-            <Text style={styles.title}>Title</Text>
-            <Text style={styles.question}>Question n</Text>
-            <Text style={styles.devComments}>Dev Comments</Text>
+            <Text style={styles.title}>{props.title}</Text>
+            <Text style={styles.question}>{props.question[0]}</Text>
+            <Text style={styles.devComments}>{props.question[1]}</Text>
         </View>
     );
 }

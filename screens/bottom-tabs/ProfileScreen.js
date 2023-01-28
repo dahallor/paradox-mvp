@@ -6,14 +6,18 @@ import Textbox from '../../components/profile/Textbox';
 
 //TODO: Implement stack naviagator between profile header and chat page
 
-export default function ProfileScreen() {
+export default function ProfileScreen({ navigation, route }) {
     //First box is for demographics, second for core questions, third for top hobbies
-    const route = useRoute()
-    console.log(route)
-    console
+    console.log("Profile")
+    console.log(route.params)
+    let name = route.params.matchName
+    navigation.setOptions({
+        headerTitle: () =>
+            <Text>{name}</Text>
+    })
+
     return (
         <View style={styles.container}>
-            <ProfileHeader />
             <DisplayAnswers />
             <DisplayAnswers />
             <DisplayAnswers />

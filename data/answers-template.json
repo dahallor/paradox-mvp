@@ -1,0 +1,405 @@
+{
+    "demographicsAnswers": [
+        {
+            "Age": [
+                [
+                    null
+                ]
+            ],
+            "Religion": [
+                [
+                    "Agnostic",
+                    null
+                ],
+                [
+                    "Atheist",
+                    null
+                ],
+                [
+                    "Buddist",
+                    null
+                ],
+                [
+                    "Bahai",
+                    null
+                ],
+                [
+                    "Catholic",
+                    null
+                ],
+                [
+                    "Christian",
+                    null
+                ],
+                [
+                    "Diest",
+                    null
+                ],
+                [
+                    "Jane",
+                    null
+                ],
+                [
+                    "Jewish",
+                    null
+                ],
+                [
+                    "Hindu",
+                    null
+                ],
+                [
+                    "Muslim",
+                    null
+                ],
+                [
+                    "Sikh",
+                    null
+                ],
+                [
+                    "Spirtual",
+                    "Various Zodiacs, Non-dogmatic Beliefs, Etc."
+                ],
+                [
+                    "Other",
+                    null
+                ]
+            ],
+            "Orientation": [
+                [
+                    "Heterosexual",
+                    "Kinsey Scale 0"
+                ],
+                [
+                    "Heteroflexible",
+                    "Kinsey Scale 1"
+                ],
+                [
+                    "Bisexual/Pansexual",
+                    "Kinsey Scale Between 2-5"
+                ],
+                [
+                    "Homosexual",
+                    "Kinsey Scale 6"
+                ]
+            ],
+            "Gender Identity": [
+                [
+                    "Cisman",
+                    null
+                ],
+                [
+                    "Ciswoman",
+                    null
+                ],
+                [
+                    "Transman",
+                    null
+                ],
+                [
+                    "Transwoman",
+                    null
+                ],
+                [
+                    "Non-binary",
+                    null
+                ],
+                [
+                    "Other Gender Expression",
+                    null
+                ]
+            ],
+            "Babaloynian Zodiac": [
+                [
+                    "Aquarius",
+                    null
+                ],
+                [
+                    "Pisces",
+                    null
+                ],
+                [
+                    "Aries",
+                    null
+                ],
+                [
+                    "Taurus",
+                    null
+                ],
+                [
+                    "Gemini",
+                    null
+                ],
+                [
+                    "Cancer",
+                    null
+                ],
+                [
+                    "Leo",
+                    null
+                ],
+                [
+                    "Virgo",
+                    null
+                ],
+                [
+                    "Libra",
+                    null
+                ],
+                [
+                    "Scorpio",
+                    null
+                ],
+                [
+                    "Sagittarius",
+                    null
+                ],
+                [
+                    "Capricorn",
+                    null
+                ]
+            ],
+            "Occupation": [
+                [
+                    null
+                ]
+            ],
+            "Education": [
+                [
+                    "High School Dropout",
+                    null
+                ],
+                [
+                    "Highschool Graduate",
+                    null
+                ],
+                [
+                    "In Trade School",
+                    null
+                ],
+                [
+                    "Trade School Graduate",
+                    null
+                ],
+                [
+                    "In Undergrad",
+                    null
+                ],
+                [
+                    "Undergratuate",
+                    null
+                ],
+                [
+                    "In Graduate School",
+                    null
+                ],
+                [
+                    "Graduate School",
+                    null
+                ],
+                [
+                    "Persuing PhD",
+                    null
+                ],
+                [
+                    "All But Dissertation",
+                    null
+                ],
+                [
+                    "PhD",
+                    null
+                ],
+                [
+                    "Other Professional Degree",
+                    null
+                ]
+            ],
+            "Race": [
+                [
+                    "White",
+                    null
+                ],
+                [
+                    "Black",
+                    null
+                ],
+                [
+                    "Asian/East Asian",
+                    null
+                ],
+                [
+                    "Indian/South Asian",
+                    null
+                ],
+                [
+                    "Latino/Latina",
+                    null
+                ],
+                [
+                    "Middle Eastern (Arabic & Persian included here)",
+                    null
+                ],
+                [
+                    "Indiginous",
+                    null
+                ]
+            ],
+            "Height": [
+                [
+                    null
+                ]
+            ],
+            "Body Type": [
+                [
+                    "Ectomorph",
+                    null
+                ],
+                [
+                    "Mesomorph",
+                    null
+                ],
+                [
+                    "Endomorph",
+                    null
+                ],
+                [
+                    "Fun size",
+                    null
+                ],
+                [
+                    "Petite",
+                    null
+                ],
+                [
+                    "Thin",
+                    null
+                ],
+                [
+                    "Toned",
+                    null
+                ],
+                [
+                    "Athletic",
+                    null
+                ],
+                [
+                    "Average",
+                    null
+                ],
+                [
+                    "A little bigger than average",
+                    null
+                ],
+                [
+                    "Curvy",
+                    null
+                ],
+                [
+                    "Volumptious",
+                    null
+                ],
+                [
+                    "Overweight",
+                    null
+                ],
+                [
+                    "Super sized",
+                    null
+                ]
+            ],
+            "Diet": [
+                [
+                    "Omnivore",
+                    null
+                ],
+                [
+                    "Vegitarian",
+                    null
+                ],
+                [
+                    "Flexitarian/Reductionist",
+                    null
+                ],
+                [
+                    "Vegan",
+                    null
+                ],
+                [
+                    "Religious Diet (Kosher, Halal, etc)",
+                    null
+                ]
+            ],
+            "Drinks": [
+                [
+                    "Never",
+                    null
+                ],
+                [
+                    "Rarely",
+                    null
+                ],
+                [
+                    "Moderately/Socially",
+                    null
+                ],
+                [
+                    "Frequently",
+                    null
+                ]
+            ],
+            "Cigs": [
+                [
+                    "Never",
+                    null
+                ],
+                [
+                    "Rarely",
+                    null
+                ],
+                [
+                    "Moderately/Socially",
+                    null
+                ],
+                [
+                    "Frequently",
+                    null
+                ]
+            ],
+            "Weed": [
+                [
+                    "Never",
+                    null
+                ],
+                [
+                    "Rarely",
+                    null
+                ],
+                [
+                    "Moderately/Socially",
+                    null
+                ],
+                [
+                    "Frequently",
+                    null
+                ]
+            ],
+            "HardDrugs": [
+                [
+                    "Never",
+                    null
+                ],
+                [
+                    "Rarely",
+                    null
+                ],
+                [
+                    "Moderately/Socially",
+                    null
+                ],
+                [
+                    "Frequently",
+                    null
+                ]
+            ]
+        }
+    ]
+}

@@ -3,30 +3,22 @@ import { StyleSheet, Text, View } from 'react-native';
 import Title from '../../components/setup-card/Title'
 import List from '../../components/setup-card/List'
 import Checklist from '../../components/setup-card/Checkbox';
+import { useRoute, useNavigation } from '@react-navigation/core'
 
 //TODO: styling here for text is hard coded seperate from list so fix that at some point
+//TODO: set callback function to set dev comments on button press from list
+//TODO: add condition to render textbox on null and flatlist on not null
 
 
-export default function UserSetupScreen() {
+export default function UserSetupScreen(props) {
+    const route = useRoute()
+    const navigation = useNavigation()
     const [selection, setSelection] = useState(null)
     const [direction, setDirection] = useState(null)
     const [questions, setQuestions] = useState(null)
     const [placeholder, setPlaceholder] = useState([
         { key: '1', text: "yes" },
-        { key: '2', text: "no" },
-        { key: '3', text: "scroll bitch" },
-        { key: '4', text: "scroll bitch" },
-        { key: '5', text: "scroll bitch" },
-        { key: '6', text: "scroll bitch" },
-        { key: '7', text: "scroll bitch" },
-        { key: '8', text: "scroll bitch" },
-        { key: '9', text: "scroll bitch" },
-        { key: '10', text: "scroll bitch" },
-        { key: '11', text: "scroll bitch" },
-        { key: '12', text: "scroll bitch" },
-        { key: '13', text: "scroll bitch" },
-        { key: '14', text: "scroll bitch" },
-        { key: '15', text: "scroll bitch" }
+        { key: '2', text: "no" }
     ])
 
     function reset(direction) {
@@ -42,7 +34,7 @@ export default function UserSetupScreen() {
     }
     return (
         <View style={styles.container}>
-            <Title />
+            <Title question={route.params.question} title={route.params.title} />
             {selection === null ?
                 <List changeSelection={selection => setSelection(selection)} data={placeholder} /> :
                 <>
