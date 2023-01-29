@@ -6,9 +6,7 @@ export default function List(props) {
         props.data.key = 1
     }
 
-    function changeColor() {
-        //console.log(styles.container.backgroundColor)
-    }
+
 
     return (
         <View style={styles.container}>
@@ -17,12 +15,10 @@ export default function List(props) {
                 // inverted={true}
                 //check to see if this is right syntax
                 renderItem={({ item }) => (
-                    <TouchableHighlight underlayColor='purple' onShowUnderlay={() => changeColor()} onPress={() => props.changeSelection(item)}>
+                    <TouchableHighlight underlayColor='purple' onPress={() => props.changeSelection(item)}>
                         <Text style={styles.item}>{item.text}</Text>
                     </TouchableHighlight>
-
                 )}
-
             />
         </View>
     );

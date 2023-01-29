@@ -1,61 +1,19 @@
 {
     "demographicQuestions": {
-        "Age": [
-            "What is your age?",
-            null
-        ],
-        "Religion": [
-            "What is your relgion/spiritual beliefs?",
-            null
-        ],
-        "Orientation": [
-            "What is your sexual orientation?",
-            null
-        ],
-        "GenderIdentity": [
-            "What is your gender identity?",
-            null
-        ],
-        "Zodiac": [
-            "What is your Zodiac Sign?",
-            "Your zodiac under the Babyloinian system"
-        ],
-        "Occupation": [
-            "What is your occupation?",
-            null
-        ],
-        "Education": [
-            "What is your level of education?",
-            null
-        ],
-        "Race": [
-            "What is your ethnicity",
-            null
-        ],
-        "Height": [
-            "What is your height?",
-            "Change between metric and imperial in the settings menu"
-        ],
+        "Age": "What is your birthday?",
+        "Religion": "What is your relgion/spiritual beliefs?",
+        "Orientation": "What is your sexual orientation?",
+        "GenderIdentity": "What is your gender identity?",
+        "Zodiac": "What is your Zodiac Sign?",
+        "Occupation": "What is your occupation?",
+        "Education": "What is your level of education?",
+        "Race": "What is your ethnicity",
+        "Height": "What is your height?",
         "BodyType": "What is your body type?",
-        "Diet": [
-            "What is your diet?",
-            null
-        ],
-        "Drinks": [
-            "What is your relationship with alcohol?",
-            null
-        ],
-        "Cigs": [
-            "What is your relationship with cigarettes?",
-            null
-        ],
-        "Weed": [
-            "What is your relationship with marijuana?",
-            null
-        ],
-        "HardDrugs": [
-            "What is your relationship with harder substances?",
-            null
-        ]
+        "Diet": "What is your diet?",
+        "Drinks": "What is your relationship with alcohol?",
+        "Cigs": "What is your relationship with cigarettes?",
+        "Weed": "What is your relationship with marijuana?",
+        "HardDrugs": "What is your relationship with harder substances?"
     }
 }

@@ -1,405 +1,539 @@
 {
-    "demographicsAnswers": [
-        {
-            "Age": [
-                [
-                    null
-                ]
-            ],
-            "Religion": [
-                [
-                    "Agnostic",
-                    null
-                ],
-                [
-                    "Atheist",
-                    null
-                ],
-                [
-                    "Buddist",
-                    null
-                ],
-                [
-                    "Bahai",
-                    null
-                ],
-                [
-                    "Catholic",
-                    null
-                ],
-                [
-                    "Christian",
-                    null
-                ],
-                [
-                    "Diest",
-                    null
-                ],
-                [
-                    "Jane",
-                    null
-                ],
-                [
-                    "Jewish",
-                    null
-                ],
-                [
-                    "Hindu",
-                    null
-                ],
-                [
-                    "Muslim",
-                    null
-                ],
-                [
-                    "Sikh",
-                    null
-                ],
-                [
-                    "Spirtual",
-                    "Various Zodiacs, Non-dogmatic Beliefs, Etc."
-                ],
-                [
-                    "Other",
-                    null
-                ]
-            ],
-            "Orientation": [
-                [
-                    "Heterosexual",
-                    "Kinsey Scale 0"
-                ],
-                [
-                    "Heteroflexible",
-                    "Kinsey Scale 1"
-                ],
-                [
-                    "Bisexual/Pansexual",
-                    "Kinsey Scale Between 2-5"
-                ],
-                [
-                    "Homosexual",
-                    "Kinsey Scale 6"
-                ]
-            ],
-            "Gender Identity": [
-                [
-                    "Cisman",
-                    null
-                ],
-                [
-                    "Ciswoman",
-                    null
-                ],
-                [
-                    "Transman",
-                    null
-                ],
-                [
-                    "Transwoman",
-                    null
-                ],
-                [
-                    "Non-binary",
-                    null
-                ],
-                [
-                    "Other Gender Expression",
-                    null
-                ]
-            ],
-            "Babaloynian Zodiac": [
-                [
-                    "Aquarius",
-                    null
-                ],
-                [
-                    "Pisces",
-                    null
-                ],
-                [
-                    "Aries",
-                    null
-                ],
-                [
-                    "Taurus",
-                    null
-                ],
-                [
-                    "Gemini",
-                    null
-                ],
-                [
-                    "Cancer",
-                    null
-                ],
-                [
-                    "Leo",
-                    null
-                ],
-                [
-                    "Virgo",
-                    null
-                ],
-                [
-                    "Libra",
-                    null
-                ],
-                [
-                    "Scorpio",
-                    null
-                ],
-                [
-                    "Sagittarius",
-                    null
-                ],
-                [
-                    "Capricorn",
-                    null
-                ]
-            ],
-            "Occupation": [
-                [
-                    null
-                ]
-            ],
-            "Education": [
-                [
-                    "High School Dropout",
-                    null
-                ],
-                [
-                    "Highschool Graduate",
-                    null
-                ],
-                [
-                    "In Trade School",
-                    null
-                ],
-                [
-                    "Trade School Graduate",
-                    null
-                ],
-                [
-                    "In Undergrad",
-                    null
-                ],
-                [
-                    "Undergratuate",
-                    null
-                ],
-                [
-                    "In Graduate School",
-                    null
-                ],
-                [
-                    "Graduate School",
-                    null
-                ],
-                [
-                    "Persuing PhD",
-                    null
-                ],
-                [
-                    "All But Dissertation",
-                    null
-                ],
-                [
-                    "PhD",
-                    null
-                ],
-                [
-                    "Other Professional Degree",
-                    null
-                ]
-            ],
-            "Race": [
-                [
-                    "White",
-                    null
-                ],
-                [
-                    "Black",
-                    null
-                ],
-                [
-                    "Asian/East Asian",
-                    null
-                ],
-                [
-                    "Indian/South Asian",
-                    null
-                ],
-                [
-                    "Latino/Latina",
-                    null
-                ],
-                [
-                    "Middle Eastern (Arabic & Persian included here)",
-                    null
-                ],
-                [
-                    "Indiginous",
-                    null
-                ]
-            ],
-            "Height": [
-                [
-                    null
-                ]
-            ],
-            "Body Type": [
-                [
-                    "Ectomorph",
-                    null
-                ],
-                [
-                    "Mesomorph",
-                    null
-                ],
-                [
-                    "Endomorph",
-                    null
-                ],
-                [
-                    "Fun size",
-                    null
-                ],
-                [
-                    "Petite",
-                    null
-                ],
-                [
-                    "Thin",
-                    null
-                ],
-                [
-                    "Toned",
-                    null
-                ],
-                [
-                    "Athletic",
-                    null
-                ],
-                [
-                    "Average",
-                    null
-                ],
-                [
-                    "A little bigger than average",
-                    null
-                ],
-                [
-                    "Curvy",
-                    null
-                ],
-                [
-                    "Volumptious",
-                    null
-                ],
-                [
-                    "Overweight",
-                    null
-                ],
-                [
-                    "Super sized",
-                    null
-                ]
-            ],
-            "Diet": [
-                [
-                    "Omnivore",
-                    null
-                ],
-                [
-                    "Vegitarian",
-                    null
-                ],
-                [
-                    "Flexitarian/Reductionist",
-                    null
-                ],
-                [
-                    "Vegan",
-                    null
-                ],
-                [
-                    "Religious Diet (Kosher, Halal, etc)",
-                    null
-                ]
-            ],
-            "Drinks": [
-                [
-                    "Never",
-                    null
-                ],
-                [
-                    "Rarely",
-                    null
-                ],
-                [
-                    "Moderately/Socially",
-                    null
-                ],
-                [
-                    "Frequently",
-                    null
-                ]
-            ],
-            "Cigs": [
-                [
-                    "Never",
-                    null
-                ],
-                [
-                    "Rarely",
-                    null
-                ],
-                [
-                    "Moderately/Socially",
-                    null
-                ],
-                [
-                    "Frequently",
-                    null
-                ]
-            ],
-            "Weed": [
-                [
-                    "Never",
-                    null
-                ],
-                [
-                    "Rarely",
-                    null
-                ],
-                [
-                    "Moderately/Socially",
-                    null
-                ],
-                [
-                    "Frequently",
-                    null
-                ]
-            ],
-            "HardDrugs": [
-                [
-                    "Never",
-                    null
-                ],
-                [
-                    "Rarely",
-                    null
-                ],
-                [
-                    "Moderately/Socially",
-                    null
-                ],
-                [
-                    "Frequently",
-                    null
-                ]
-            ]
-        }
-    ]
+    "demographicsAnswers": {
+        "Age": [
+            {
+                "key": 1,
+                "text": null,
+                "devComments": null
+            }
+        ],
+        "Religion": [
+            {
+                "key": 1,
+                "text": "Agnostic",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Athiest",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Buddist",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Bahai",
+                "devComments": null
+            },
+            {
+                "key": 5,
+                "text": "Catholic",
+                "devComments": null
+            },
+            {
+                "key": 6,
+                "text": "Christian",
+                "devComments": null
+            },
+            {
+                "key": 7,
+                "text": "Diest",
+                "devComments": null
+            },
+            {
+                "key": 8,
+                "text": "Jane",
+                "devComments": null
+            },
+            {
+                "key": 9,
+                "text": "Jewish",
+                "devComments": null
+            },
+            {
+                "key": 10,
+                "text": "Hindu",
+                "devComments": null
+            },
+            {
+                "key": 11,
+                "text": "Indigenous Religion",
+                "devComments": null
+            },
+            {
+                "key": 12,
+                "text": "Muslim",
+                "devComments": null
+            },
+            {
+                "key": 13,
+                "text": "Other",
+                "devComments": null
+            },
+            {
+                "key": 14,
+                "text": "Sihk",
+                "devComments": null
+            },
+            {
+                "key": 15,
+                "text": "Spiritual",
+                "devComments": "Various Zodiacs, Non-dogmatic Beliefs, Etc."
+            },
+            {
+                "key": 16,
+                "text": "Zooroastrian",
+                "devComments": "Various Zodiacs, Non-dogmatic Beliefs, Etc."
+            }
+        ],
+        "Orientation": [
+            {
+                "key": 1,
+                "text": "Heterosexual",
+                "devComments": "Kinsey Scale 0"
+            },
+            {
+                "key": 2,
+                "text": "Heteroflexible",
+                "devComments": "Kinsey Scale 1"
+            },
+            {
+                "key": 3,
+                "text": "Bisexual/Pansexual",
+                "devComments": "Kinsey Scale Between 2-5"
+            },
+            {
+                "key": 4,
+                "text": "Homosexual",
+                "devComments": "Kinsey Scale 6"
+            }
+        ],
+        "GenderIdentity": [
+            {
+                "key": 1,
+                "text": "Cisman",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Ciswoman",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Transman",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Transwoman",
+                "devComments": null
+            },
+            {
+                "key": 5,
+                "text": "Non-binary",
+                "DevComments": null
+            },
+            {
+                "key": 6,
+                "text": "Other Gender Expression",
+                "devComments": null
+            }
+        ],
+        "Zodiac": [
+            {
+                "key": 1,
+                "text": "Aquarius",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Pisces",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Aries",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Taurus",
+                "devComments": null
+            },
+            {
+                "key": 5,
+                "text": "Gemini",
+                "devComments": null
+            },
+            {
+                "key": 6,
+                "text": "Cancer",
+                "devComments": null
+            },
+            {
+                "key": 7,
+                "text": "Leo",
+                "devComments": null
+            },
+            {
+                "key": 8,
+                "text": "Virgo",
+                "devComments": null
+            },
+            {
+                "key": 9,
+                "text": "Libra",
+                "devComments": null
+            },
+            {
+                "key": 10,
+                "text": "Scorpio",
+                "devComments": null
+            },
+            {
+                "key": 11,
+                "text": "Sagittarius",
+                "devComments": null
+            },
+            {
+                "key": 12,
+                "text": "Capricorn",
+                "devComments": null
+            }
+        ],
+        "Occupation": [
+            {
+                "key": 1,
+                "text": null,
+                "devComments": null
+            }
+        ],
+        "Education": [
+            {
+                "key": 1,
+                "text": "High School Dropout",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Highschool Graduate",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "In Trade School",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Trade School Graduate",
+                "devComments": null
+            },
+            {
+                "key": 5,
+                "text": "In Undergrad",
+                "devComments": null
+            },
+            {
+                "key": 6,
+                "text": "Undergratuate",
+                "devComments": null
+            },
+            {
+                "key": 7,
+                "text": "In Graduate School",
+                "devComments": null
+            },
+            {
+                "key": 8,
+                "text": "Graduate School",
+                "devComments": null
+            },
+            {
+                "key": 9,
+                "text": "Persuing PhD",
+                "devComments": null
+            },
+            {
+                "key": 10,
+                "text": "All But Dissertation",
+                "devComments": null
+            },
+            {
+                "key": 11,
+                "text": "PhD",
+                "devComments": null
+            },
+            {
+                "key": 12,
+                "text": "Other Professional Degree",
+                "devComments": null
+            }
+        ],
+        "Race": [
+            {
+                "key": 1,
+                "text": "White",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Black",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Asian/East Asian",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Indian/South Asian",
+                "devComments": null
+            },
+            {
+                "key": 5,
+                "text": "Latino/Latina",
+                "devComments": null
+            },
+            {
+                "key": 6,
+                "text": "Middle Eastern",
+                "devComments": null
+            },
+            {
+                "key": 7,
+                "text": "Indiginous",
+                "devComments": null
+            },
+            {
+                "key": 8,
+                "text": "Mixed",
+                "devComments": null
+            }
+        ],
+        "Height": [
+            {
+                "key": 1,
+                "text": null,
+                "devComments": "imperial, change to metric in settings"
+            }
+        ],
+        "BodyType": [
+            {
+                "key": 1,
+                "text": "Ectomorph",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Mesomorph",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Endomorph",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Fun size",
+                "devComments": null
+            },
+            {
+                "key": 5,
+                "text": "Petite",
+                "devComments": null
+            },
+            {
+                "key": 6,
+                "text": "Thin",
+                "devComments": null
+            },
+            {
+                "key": 7,
+                "text": "Toned",
+                "devComments": null
+            },
+            {
+                "key": 8,
+                "text": "Athletic",
+                "devComments": null
+            },
+            {
+                "key": 9,
+                "text": "Average",
+                "devComments": null
+            },
+            {
+                "key": 10,
+                "text": "A little bigger than average",
+                "devComments": null
+            },
+            {
+                "key": 11,
+                "text": "Curvy",
+                "devComments": null
+            },
+            {
+                "key": 12,
+                "text": "Volumptious",
+                "devComments": null
+            },
+            {
+                "key": 13,
+                "text": "Overweight",
+                "devComments": null
+            },
+            {
+                "key": 14,
+                "text": "Super sized",
+                "devComments": null
+            }
+        ],
+        "Diet": [
+            {
+                "key": 1,
+                "text": "Omnivore",
+                "devComments": "Eats whatever"
+            },
+            {
+                "key": 2,
+                "text": "Pollo Pesciatrian",
+                "devComments": "No red meat but eats chicken and seafood"
+            },
+            {
+                "key": 3,
+                "text": "Pesciatrian",
+                "devComments": "Only meat eaten is seafood"
+            },
+            {
+                "key": 4,
+                "text": "Insectivore/Entomophage",
+                "devComments": "Only meat products eaten are insects"
+            },
+            {
+                "key": 5,
+                "text": "Vegitarian",
+                "devComments": "Doesn't eat any animals but does eat animal products"
+            },
+            {
+                "key": 6,
+                "text": "Flexitarian/Reductionist",
+                "devComments": "Still eats meat but actively minimizes the amount"
+            },
+            {
+                "key": 7,
+                "text": "Vegan",
+                "devComments": "Doesn't eat meat or most/any animal products"
+            },
+            {
+                "key": 8,
+                "text": "Religious Diet",
+                "devComments": "Kosher, Halal, etc."
+            },
+            {
+                "key": 9,
+                "text": "Weight Loss",
+                "devComments": "Keto (for weight loss), Gluten-Free (for weight loss), Akins, Paleo, Itermitten Fasting, etc."
+            },
+            {
+                "key": 10,
+                "text": "Medical Diet",
+                "devComments": "DASH, FODMAP, Keto (for epilepsy), Gluten-Free (for Celiac's)"
+            }
+        ],
+        "Drinks": [
+            {
+                "key": 1,
+                "text": "Never",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Rarely",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Moderately/Socially",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Frequently",
+                "devComments": null
+            }
+        ],
+        "Cigs": [
+            {
+                "key": 1,
+                "text": "Never",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Rarely",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Moderately/Socially",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Frequently",
+                "devComments": null
+            }
+        ],
+        "Weed": [
+            {
+                "key": 1,
+                "text": "Never",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Rarely",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Moderately/Socially",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Frequently",
+                "devComments": null
+            }
+        ],
+        "HardDrugs": [
+            {
+                "key": 1,
+                "text": "Never",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Rarely",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Moderately/Socially",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Frequently",
+                "devComments": null
+            }
+        ]
+    }
 }

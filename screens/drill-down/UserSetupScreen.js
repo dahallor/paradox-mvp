@@ -1,9 +1,6 @@
-import React, { useState } from 'react'
-import { StyleSheet, Text, View } from 'react-native';
-import Title from '../../components/setup-card/Title'
-import List from '../../components/setup-card/List'
-import Checklist from '../../components/setup-card/Checkbox';
-import { useRoute, useNavigation } from '@react-navigation/core'
+import CheckboxCard from "../../components/setup-card/CheckboxCard";
+import NoCheckboxCard from '../../components/setup-card/NoCheckboxCard'
+import { useRoute } from "@react-navigation/native";
 
 //TODO: styling here for text is hard coded seperate from list so fix that at some point
 //TODO: set callback function to set dev comments on button press from list
@@ -12,54 +9,14 @@ import { useRoute, useNavigation } from '@react-navigation/core'
 
 export default function UserSetupScreen(props) {
     const route = useRoute()
-    const navigation = useNavigation()
-    const [selection, setSelection] = useState(null)
-    const [direction, setDirection] = useState(null)
-    const [questions, setQuestions] = useState(null)
-    const [placeholder, setPlaceholder] = useState([
-        { key: '1', text: "yes" },
-        { key: '2', text: "no" }
-    ])
-
-    function reset(direction) {
-
-        if (direction === "BACK") {
-            //do stuff
-        }
-        if (direction === "SUBMIT") {
-            // do other stuff
-        }
-        setDirection(null)
-        setSelection(null)
-    }
+    let section = route.params.title
     return (
-        <View style={styles.container}>
-            <Title question={route.params.question} title={route.params.title} />
-            {selection === null ?
-                <List changeSelection={selection => setSelection(selection)} data={placeholder} /> :
-                <>
-                    <Text style={styles.item}>{selection.text}</Text>
-                    <Checklist direction={direction => reset(direction)} />
-                </>
+        <>
+            {section === "Demographics" ?
+                <NoCheckboxCard {...props} />
+                :
+                <CheckboxCard {...props} />
             }
-        </View>
-    );
+        </>
+    )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: 'blue',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: '100%'
-    },
-    item: {
-        backgroundColor: 'purple',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: '100%',
-        padding: 10,
-    }
-}
-)

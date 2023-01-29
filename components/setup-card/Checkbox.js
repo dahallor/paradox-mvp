@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, TouchableWithoutFeedback } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 //TODO: fix markers
 //TODO: sync to json server
@@ -13,6 +14,7 @@ export default function Checklist(props) {
     const [marker2, setMarker2] = useState("")
     const [marker3, setMarker3] = useState("")
     const [marker4, setMarker4] = useState("")
+    const navigation = useNavigation()
 
     function clearMarkers() {
         setMarker1("")
@@ -30,6 +32,7 @@ export default function Checklist(props) {
         //TODO: sync to api endpoints
         props.direction(direction)
         clearMarkers()
+        navigation.navigate(props.nextPage)
     }
     return (
         <View style={styles.container}>
@@ -69,8 +72,8 @@ export default function Checklist(props) {
                     </>
                     :
                     <>
-                        <TouchableWithoutFeedback style={styles.directionBoxInvalid}>
-                            <Text style={styles.marker}>BACK</Text>
+                        <TouchableWithoutFeedback style={styles.directionBoxValid}>
+                            <Text style={styles.marker} onPress={() => directionHandler("BACK")}>BACK</Text>
                         </TouchableWithoutFeedback>
                         <TouchableWithoutFeedback style={styles.directionBoxInvalid}>
                             <Text style={styles.marker}>SUBMIT</Text>
