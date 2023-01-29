@@ -28,12 +28,6 @@ export default function Checklist(props) {
         setMarker("X")
     }
 
-    function directionHandler(direction) {
-        //TODO: sync to api endpoints
-        props.direction(direction)
-        clearMarkers()
-        navigation.navigate(props.nextPage)
-    }
     return (
         <View style={styles.container}>
             <View style={styles.line}>
@@ -59,27 +53,6 @@ export default function Checklist(props) {
                     <Text style={styles.marker} onPress={() => pressHandler(setMarker4)}>{marker4}</Text>
                 </TouchableOpacity>
                 <Text>    Not Important</Text>
-            </View>
-            <View style={styles.line}>
-                {marker1 !== "" || marker2 !== "" || marker3 !== "" || marker4 !== "" ?
-                    <>
-                        <TouchableOpacity style={styles.directionBoxValid}>
-                            <Text style={styles.marker} onPress={() => directionHandler("BACK")}>BACK</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style={styles.directionBoxValid}>
-                            <Text style={styles.marker} onPress={() => directionHandler("SUBMIT")}>SUBMIT</Text>
-                        </TouchableOpacity>
-                    </>
-                    :
-                    <>
-                        <TouchableWithoutFeedback style={styles.directionBoxValid}>
-                            <Text style={styles.marker} onPress={() => directionHandler("BACK")}>BACK</Text>
-                        </TouchableWithoutFeedback>
-                        <TouchableWithoutFeedback style={styles.directionBoxInvalid}>
-                            <Text style={styles.marker}>SUBMIT</Text>
-                        </TouchableWithoutFeedback>
-                    </>
-                }
             </View>
         </View>
     );

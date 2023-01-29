@@ -6,11 +6,6 @@ import ChatHeader from '../../components/chat-log/ChatHeader';
 
 
 export default function ChatScreen(props) {
-
-    console.log("Chat Screen")
-    console.log(props.route)
-    console.log(props.navigation)
-
     return (
         <View style={styles.container}>
             <ChatHeader />

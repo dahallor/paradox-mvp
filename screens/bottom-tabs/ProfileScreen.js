@@ -8,8 +8,6 @@ import Textbox from '../../components/profile/Textbox';
 
 export default function ProfileScreen({ navigation, route }) {
     //First box is for demographics, second for core questions, third for top hobbies
-    console.log("Profile")
-    console.log(route.params)
     let name = route.params.matchName
     navigation.setOptions({
         headerTitle: () =>

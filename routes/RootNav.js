@@ -11,7 +11,6 @@ import DebugScreen from '../screens/bottom-tabs/DebugScreen';
 import ROUTES from '../constants/Routes';
 
 export default function RootNav() {
-    console.log('RootNav')
     const Tab = createMaterialBottomTabNavigator();
     return (
         <Tab.Navigator>

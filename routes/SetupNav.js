@@ -9,8 +9,6 @@ export default function SetupNav(props) {
     let userData = require('../data/user-profile.json')
     const questions = require('../data/questions-template.json')
     const answers = require('../data/answers-template.json')
-    console.log("SetupNav")
-    console.log(answers)
 
     return (
         <Stack.Navigator initialRouteName="Home">

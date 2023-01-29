@@ -15,9 +15,6 @@ import { useRoute } from "@react-navigation/core";
 export default function ChatNav(props) {
     const Stack = createStackNavigator()
 
-    console.log('ChatNav')
-    console.log(props.route)
-
     function doStuff() {
         props.navigation.navigate('Profile')
 

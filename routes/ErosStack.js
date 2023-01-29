@@ -11,7 +11,6 @@ import { useRoute } from "@react-navigation/core";
 export default function ErosStack(props) {
     const route = useRoute();
     const ErosStack = createStackNavigator();
-    console.log(route)
 
     function doStuff(navigation) {
         navigation.navigate('Profile')

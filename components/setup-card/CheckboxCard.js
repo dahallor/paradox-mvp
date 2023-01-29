@@ -13,9 +13,6 @@ export default function CheckboxCard(props) {
     const [direction, setDirection] = useState(null)
 
     let checkForNull = route.params.answer[0].text
-    console.log("UserSetupScreen")
-    console.log(route.params.answer)
-    console.log(props.nextPage)
 
 
     function reset(direction) {

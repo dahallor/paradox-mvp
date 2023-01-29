@@ -9,8 +9,6 @@ import ErosStack from './ErosStack';
 
 
 export default function HomeNav(props) {
-    console.log('HomeNav')
-    console.log(props.route)
     const Tab = createMaterialTopTabNavigator()
     return (
         <Tab.Navigator>
