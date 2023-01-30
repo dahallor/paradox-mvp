@@ -1,6 +1,10 @@
 {
+    "introQuestions": {
+        "UserName": "What is your name? This will be displayed so use a psuedonym if desired.",
+        "Location": "What city/town do you currently reside?",
+        "Age": "What is your birthday?"
+    },
     "demographicQuestions": {
-        "Age": "What is your birthday?",
         "Religion": "What is your relgion/spiritual beliefs?",
         "Orientation": "What is your sexual orientation?",
         "GenderIdentity": "What is your gender identity?",
@@ -15,5 +19,16 @@
         "Cigs": "What is your relationship with cigarettes?",
         "Weed": "What is your relationship with marijuana?",
         "HardDrugs": "What is your relationship with harder substances?"
+    },
+    "coreQuestions": {
+        "Seeking": "What are you looking for?",
+        "Kids": "Do you want kids?",
+        "RelationshipStructure": "What type of relationship structure are you looking for?",
+        "Religious": "How strong are your convictions in your specified belief system, and how important is it your partner share the same convicitions?",
+        "SexDrive": "How would you describe your sex drive?",
+        "Kink": "How would you descibe the intensity of your sexual tastes?",
+        "Roots": "Do you want to set down roots where you are currently located?",
+        "PreferedLocation": "What tyoe of area do you wish to live long-term?",
+        "Politics": "What are your political leanings?"
     }
 }

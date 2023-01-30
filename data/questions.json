@@ -199,7 +199,8 @@
             "Big City Urban",
             "Suburban",
             "Small Town Urban",
-            "Rural"
+            "Rural",
+            "Nomadic"
         ]
     },
     "hobbies": {

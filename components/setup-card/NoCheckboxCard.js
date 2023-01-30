@@ -2,19 +2,17 @@ import React, { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 import Title from '../../components/setup-card/Title'
 import List from '../../components/setup-card/List'
-import Checklist from '../../components/setup-card/Checkbox';
+
 import Textbox from '../../components/setup-card/Textbox';
 import SetupFooter from './SetupFooter';
 import { useRoute, useNavigation } from '@react-navigation/core'
 
 
-//TODO: make a stand alone submit button for this component so they can read dev comments
-export default function CheckboxCard(props) {
+export default function NoCheckboxCard(props) {
     const route = useRoute()
     const navigation = useNavigation()
     const [selection, setSelection] = useState(null)
     const [devComment, setDevComment] = useState(null)
-
 
     let checkForNull = route.params.answer[0].text
 

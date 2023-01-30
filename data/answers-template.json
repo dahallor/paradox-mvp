@@ -1,12 +1,28 @@
 {
-    "demographicsAnswers": {
-        "Age": [
+    "introAnswers": {
+        "UserName": [
             {
                 "key": 1,
                 "text": null,
                 "devComments": null
             }
         ],
+        "Location": [
+            {
+                "key": 1,
+                "text": null,
+                "devComments": null
+            }
+        ],
+        "Age": [
+            {
+                "key": 1,
+                "text": null,
+                "devComments": null
+            }
+        ]
+    },
+    "demographicsAnswers": {
         "Religion": [
             {
                 "key": 1,
@@ -533,6 +549,251 @@
                 "key": 4,
                 "text": "Frequently",
                 "devComments": null
+            }
+        ]
+    },
+    "coreAnswers": {
+        "Seeking": [
+            {
+                "key": 1,
+                "text": "Marriage",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Long Term Dating",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Short Term Dating",
+                "devComments": "For all your situationship or casual dating needs"
+            },
+            {
+                "key": 4,
+                "text": "Hookup",
+                "devComments": "No feelings, just sex"
+            },
+            {
+                "key": 5,
+                "text": "Platonic",
+                "devComments": "No sex, just connection"
+            }
+        ],
+        "Kids": [
+            {
+                "key": 1,
+                "text": "Don't Want",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Unsure",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Want",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Have & Want More",
+                "devComments": null
+            },
+            {
+                "key": 5,
+                "text": "Have & Don't Want More",
+                "devComments": null
+            }
+        ],
+        "RelationshipStructure": [
+            {
+                "key": 1,
+                "text": "Monogamous",
+                "devComments": "No other romantic or sexual partners what so ever"
+            },
+            {
+                "key": 2,
+                "text": "Non-Monogamous",
+                "devComments": "Umbrella term. Could mean swinging to polyamory to relationship anarchy. Talk to your match about it!"
+            },
+            {
+                "key": 3,
+                "text": "Open To Any",
+                "devComments": "Don't care but want a rellationship"
+            },
+            {
+                "key": 4,
+                "text": "Not Seeking A Relationship",
+                "devComments": "Don't care and don't want a relationship"
+            }
+        ],
+        "Religious": [
+            {
+                "key": 1,
+                "text": "Incredibly Strong && A Partner Must Share",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Incredibly Strong But A Partner Doesn't Need To Share",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Mild Convictions && A Partner Must Share",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Mildy Convictions But A Partner Doesn't Need To Share",
+                "devComments": null
+            },
+            {
+                "key": 5,
+                "text": "Unsure About my Convictions But A Partner Doesn't Need To Share",
+                "devComments": null
+            },
+            {
+                "key": 6,
+                "text": "Unsure About my Convictions && A Partner Must Share",
+                "devComments": null
+            },
+            {
+                "key": 7,
+                "text": "I am not religious && A Partner Must Share",
+                "devComments": null
+            },
+            {
+                "key": 8,
+                "text": "I am not religious But A Partner Doesn't Need To Share",
+                "devComments": null
+            }
+        ],
+        "SexDrive": [
+            {
+                "key": 1,
+                "text": "High Libedo",
+                "devComments": "Ideally being intimate 4+ times a week"
+            },
+            {
+                "key": 2,
+                "text": "Standard Libedo",
+                "devComments": "Ideally being intimate 1-3 times a week"
+            },
+            {
+                "key": 3,
+                "text": "Low Libedo",
+                "devComments": "Ideally being intimate less than 1 time a week or not at all"
+            }
+        ],
+        "Kink": [
+            {
+                "key": 1,
+                "text": "Vanilla",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Somewhat Kinky",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Kinky",
+                "devComments": null
+            }
+        ],
+        "Roots": [
+            {
+                "key": 1,
+                "text": "Hell No",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Probably Not",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Unsure",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Probably",
+                "devComments": null
+            },
+            {
+                "key": 5,
+                "text": "Hell Yeah",
+                "devComments": null
+            }
+        ],
+        "PreferedLocation": [
+            {
+                "key": 1,
+                "text": "Big City Urban",
+                "devComments": null
+            },
+            {
+                "key": 2,
+                "text": "Suburban",
+                "devComments": null
+            },
+            {
+                "key": 3,
+                "text": "Small Town Urban",
+                "devComments": null
+            },
+            {
+                "key": 4,
+                "text": "Rural",
+                "devComments": null
+            },
+            {
+                "key": 5,
+                "text": "Nomadic",
+                "devComments": null
+            }
+        ],
+        "Politics": [
+            {
+                "key": 1,
+                "text": "Lefitst",
+                "devComments": "Communist, Socialist, Anarco-anything (excluding Anarchocapitalist). If you identify with Bernie Sanders as the ideal world, please select Social Democrat"
+            },
+            {
+                "key": 2,
+                "text": "Social Democrat",
+                "devComments": "NOT Democratic Socialist. Confusingly, Bernie Sanders' presidential platform is ideaologically Social Democrat and NOT Democratic Socialist. Others include New Deal Democrat, or Scandanivian Model Policies"
+            },
+            {
+                "key": 3,
+                "text": "Liberal",
+                "devComments": "American Establishment Democratic ideology"
+            },
+            {
+                "key": 4,
+                "text": "Centerist (Unorthodox mixing of American Republican and Democratic platforms",
+                "devComments": "Unorthodox mixing of American Republican and Democratic platforms"
+            },
+            {
+                "key": 5,
+                "text": "Libertarian",
+                "devComments": "American Style Libertarian: 'Fiscally Conservative Socially Liberal'. Not to be confused with the original meaning of the word, which described libertarian socialists"
+            },
+            {
+                "key": 6,
+                "text": "Conservative",
+                "devComments": "Neoliberal, Neoconservative"
+            },
+            {
+                "key": 7,
+                "text": "Nationalist",
+                "devComments": "Select this if you're a straight up scumbag."
             }
         ]
     }

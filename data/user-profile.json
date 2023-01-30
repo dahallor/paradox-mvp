@@ -2,7 +2,7 @@
     "userInfo": [
         {
             "username": "example@email.com",
-            "hasUserProfile": false,
+            "hasUserProfile": true,
             "isLoggedIn": true,
             "uuid": "uuid"
         }

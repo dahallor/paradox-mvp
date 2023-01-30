@@ -4,42 +4,44 @@ import Title from '../../components/setup-card/Title'
 import List from '../../components/setup-card/List'
 import Checklist from '../../components/setup-card/Checkbox';
 import Textbox from '../../components/setup-card/Textbox';
+import SetupFooter from './SetupFooter';
 import { useRoute, useNavigation } from '@react-navigation/core'
 
 
 export default function CheckboxCard(props) {
+    console.log('checkbox card')
     const route = useRoute()
+    const navigation = useNavigation()
     const [selection, setSelection] = useState(null)
-    const [direction, setDirection] = useState(null)
+    const [devComment, setDevComment] = useState(null)
 
-    let checkForNull = route.params.answer[0].text
+    function proceed(direction) {
 
+        if (direction === "Submit") {
+            //Add JSON post request here
+        }
+        if (direction === "Skip") {
+            //post null to JSON file
 
-    function reset(direction) {
-        // if (direction === "SUBMIT") {
-        //     //add code to write to JSON here
-        //     navigation.navigate(props.nextPage)
-        // }
-        setDirection(null)
+        }
         setSelection(null)
+        setDevComment(null)
+        if (direction !== "Back") {
+            navigation.navigate(route.params.nextPage)
+        }
+
     }
     return (
         <View style={styles.container}>
-            <Title question={route.params.question} title={route.params.title} />
-            {selection !== null ?
-                <>
-                    <Text style={styles.item}>{selection.text}</Text>
-                    <Checklist direction={direction => reset(direction)} nextPage={route.params.nextPage} />
-                </>
-                :
-                <>
-                    {checkForNull === null ?
-                        <Textbox nextPage={route.params.nextPage} skipable={route.params.skipable} numeric={route.params.numeric} />
-                        :
-                        <List changeSelection={selection => setSelection(selection)} data={route.params.answer} skipable={route.params.skipable} />
-                    }
-                </>}
-
+            <Title question={route.params.question} title={route.params.title} devComment={devComment} />
+            <>
+                {selection === null ?
+                    <List changeSelection={selection => setSelection(selection)} getDevComment={devComment => setDevComment(devComment)} data={route.params.answer} multiple={route.params.multiple} />
+                    :
+                    <Checkbox />
+                }
+            </>
+            <SetupFooter skipable={route.params.skipable} getDirection={direction => proceed(direction)} canGoBack={false} selection={selection} />
         </View>
     );
 }

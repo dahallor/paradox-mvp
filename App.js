@@ -14,12 +14,20 @@ import SetupNav from './routes/SetupNav';
 //is logged in? no = login yes = has profile? yes = home no = usersetup
 export default function App() {
   let userData = require('./data/user-profile.json')
+  console.log(userData.userInfo[0].hasUserProfile)
+
 
 
   return (
     <NavigationContainer style={styles.container}>
-      {userData.isLoggedIn === true ?
-        <RootNav />
+      {userData.userInfo[0].hasUserProfile === true ?
+        <>
+          {userData.userInfo[0].isLoggedIn === true ?
+            <RootNav />
+            :
+            <Auth />
+          }
+        </>
         :
         <SetupNav />
       }
