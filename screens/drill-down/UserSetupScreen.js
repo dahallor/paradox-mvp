@@ -10,7 +10,6 @@ import { useRoute } from "@react-navigation/native";
 export default function UserSetupScreen(props) {
     const route = useRoute()
     let section = route.params.title
-    console.log(section)
     return (
         <>
             {section === "Demographics" || section === "Introductory" || section === "Core Questions" ?

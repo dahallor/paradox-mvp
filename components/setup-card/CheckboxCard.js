@@ -9,7 +9,6 @@ import { useRoute, useNavigation } from '@react-navigation/core'
 
 
 export default function CheckboxCard(props) {
-    console.log('checkbox card')
     const route = useRoute()
     const navigation = useNavigation()
     const [selection, setSelection] = useState(null)

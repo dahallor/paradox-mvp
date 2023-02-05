@@ -22,7 +22,7 @@
             }
         ]
     },
-    "demographicsAnswers": {
+    "demographicAnswers": {
         "Religion": [
             {
                 "key": 1,
@@ -119,10 +119,15 @@
             {
                 "key": 3,
                 "text": "Bisexual/Pansexual",
-                "devComments": "Kinsey Scale Between 2-5"
+                "devComments": "Kinsey Scale Between 2-4"
             },
             {
                 "key": 4,
+                "text": "Homeflexiable",
+                "devComments": "Kinsey Scale 5"
+            },
+            {
+                "key": 5,
                 "text": "Homosexual",
                 "devComments": "Kinsey Scale 6"
             }
@@ -777,7 +782,7 @@
             },
             {
                 "key": 4,
-                "text": "Centerist (Unorthodox mixing of American Republican and Democratic platforms",
+                "text": "Centerist",
                 "devComments": "Unorthodox mixing of American Republican and Democratic platforms"
             },
             {
@@ -793,7 +798,7 @@
             {
                 "key": 7,
                 "text": "Nationalist",
-                "devComments": "Select this if you're a straight up scumbag."
+                "devComments": "Fascist. Sounds harsh, maybe just call it 'Traditionalism'? Involves a hatred of Wömen, Men of Wö"
             }
         ]
     }

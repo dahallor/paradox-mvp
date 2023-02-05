@@ -1,11 +1,15 @@
 # paradox
 JSON Server:
-- run with json-server --watch db.json
+- run with json-server --watch [file name].json -p [port number]
 - https://www.npmjs.com/package/json-server
+- put each json file on its own customer port
+- user-profile.json -p 3000
+- questions-template.json -p 3001
+- answers-template.json -p 3002
 
 
 Icons:
-age: https://icons.expo.fyi/Ionicons/man
+body type: https://icons.expo.fyi/Ionicons/body-outline
 religion: https://icons.expo.fyi/FontAwesome5/pray
 orientation: https://icons.expo.fyi/FontAwesome/heart
 gender: https://icons.expo.fyi/FontAwesome/transgender-alt
