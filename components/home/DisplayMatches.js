@@ -1,7 +1,6 @@
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, Touchable } from "react-native";
-import ChatNav from "../../routes/ChatNav";
-import ErosStack from "../../routes/ErosStack";
+
 
 //TODO: make things top oriented when list is reversed
 
