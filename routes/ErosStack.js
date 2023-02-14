@@ -13,6 +13,7 @@ export default function ErosStack(props) {
     const ErosStack = createStackNavigator();
 
     function doStuff(navigation) {
+        console.log("Im using eros stack still?")
         navigation.navigate('Profile')
     }
 

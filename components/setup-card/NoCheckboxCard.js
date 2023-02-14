@@ -6,6 +6,7 @@ import List from '../../components/setup-card/List'
 import Textbox from '../../components/setup-card/Textbox';
 import SetupFooter from './SetupFooter';
 import { useRoute, useNavigation } from '@react-navigation/core'
+import { GETRequest, PATCHRequest } from '../shared/Requests'
 
 
 export default function NoCheckboxCard(props) {
@@ -17,11 +18,12 @@ export default function NoCheckboxCard(props) {
     let checkForNull = route.params.answer[0].text
 
 
-    function proceed(direction) {
+    async function proceed(direction) {
 
         if (direction === "Submit") {
             //Add JSON post request here
         }
+
         if (direction === "Skip") {
             //post null to JSON file
 

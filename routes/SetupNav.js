@@ -2,16 +2,19 @@ import { createStackNavigator } from "@react-navigation/stack";
 import React, { useEffect, useState } from 'react'
 import { View, Text } from 'react-native'
 import ROUTES from '../constants/Routes'
+import { GETRequest } from '../components/shared/Requests'
 
 import UserSetupScreen from "../screens/drill-down/UserSetupScreen";
+import FinishedSetupScreen from "../screens/drill-down/FinishedSetupScreen";
+import RootNav from "./RootNav";
 
 
 
 
 export default function SetupNav(props) {
     // let userInfo = require('../data/user-profile.json')
-    let questions = require('../data/questions-template.json')
-    let answers = require('../data/answers-template.json')
+    // let questions = require('../data/questions-template.json')
+    // let answers = require('../data/answers-template.json')
 
 
 
@@ -33,48 +36,28 @@ export default function SetupNav(props) {
 
 
     useEffect(() => {
+        console.log('use effect')
         run()
 
     }, [])
 
     async function run() {
-        let userBool = await userCalls()
         let questionsBool = await questionCalls()
         let answersBool = await answerCalls()
-        await checkIfLoaded(userBool, questionsBool, answersBool)
-    }
-
-    async function userCalls() {
-        let path = ROUTES.ANDROID_USER_USERINFO
-        let data = await APICall(path)
-        setUserInfo(data)
-
-        path = ROUTES.ANDROID_USER_SETTINGS
-        data = await APICall(path)
-        setUserSettings(data)
-
-        path = ROUTES.ANDROID_USER_DEMO
-        data = await APICall(path)
-        setUserDemographics(data)
-
-        path = ROUTES.ANDROID_USER_CORE
-        data = await APICall(path)
-        setUserCoreAnswers(data)
-
-        return true
+        await checkIfLoaded(questionsBool, answersBool)
     }
 
     async function questionCalls() {
         let path = ROUTES.ANDROID_Q_INTRO
-        let data = await APICall(path)
+        let data = await GETRequest(path)
         setIntroQuestions(data)
 
         path = ROUTES.ANDROID_Q_DEMO
-        data = await APICall(path)
+        data = await GETRequest(path)
         setDemographicQuestions(data)
 
         path = ROUTES.ANDROID_Q_CORE
-        data = await APICall(path)
+        data = await GETRequest(path)
         setCoreQuestions(data)
 
         return true
@@ -83,41 +66,27 @@ export default function SetupNav(props) {
 
     async function answerCalls() {
         let path = ROUTES.ANDROID_A_INTRO
-        let data = await APICall(path)
+        let data = await GETRequest(path)
         setIntroAnswers(data)
 
         path = ROUTES.ANDROID_A_DEMO
-        data = await APICall(path)
+        data = await GETRequest(path)
         setDemographicAnswers(data)
 
         path = ROUTES.ANDROID_A_CORE
-        data = await APICall(path)
+        data = await GETRequest(path)
         setCoreAnswers(data)
 
         return true
 
     }
 
-    async function APICall(path) {
-        try {
-            const res = await fetch(path)
-            const data = await res.json()
-            if (!res.ok) {
-                console.log('res issue')
-                console.log(res)
-                return
-            }
-            return data
-        } catch (error) {
-            console.log(error)
-        }
-    }
 
-    async function checkIfLoaded(userBool, questionsBool, answersBool) {
-        console.log(userBool, questionsBool, answersBool)
-        if (userBool === true && questionsBool === true && answersBool === true) {
+
+    async function checkIfLoaded(questionsBool, answersBool) {
+        console.log(questionsBool, answersBool)
+        if (questionsBool === true && answersBool === true) {
             setIsLoaded(true)
-            console.log("in if statement")
         } else {
             setIsLoaded(false)
         }
@@ -128,7 +97,7 @@ export default function SetupNav(props) {
         <>
             {isLoaded === true ?
                 <Stack.Navigator initialRouteName="Home">
-                    <Stack.Screen name="UserName" component={UserSetupScreen} initialParams={{ title: "Introductory", question: introQuestions.UserName, answer: introAnswers.UserName, skipable: false, numerical: false, nextPage: 'Location' }} />
+                    <Stack.Screen name="UserName" component={UserSetupScreen} initialParams={{ title: "Introductory", userRoute: ROUTES.ANDROID_USER_USERINFO, question: introQuestions.UserName, answer: introAnswers.UserName, skipable: false, numerical: false, nextPage: 'Politics' }} />
                     <Stack.Screen name="Location" component={UserSetupScreen} initialParams={{ title: "Introductory", question: introQuestions.Location, answer: introAnswers.Location, skipable: false, numerical: false, nextPage: 'Age' }} />
                     <Stack.Screen name="Age" component={UserSetupScreen} initialParams={{ title: "Introductory", question: introQuestions.Age, answer: introAnswers.Age, skipable: false, numerical: true, nextPage: 'Religion' }} />
 
@@ -155,10 +124,10 @@ export default function SetupNav(props) {
                     <Stack.Screen name="Kink" component={UserSetupScreen} initialParams={{ title: "Core Questions", question: coreQuestions.Kink, answer: coreAnswers.Kink, skipable: true, numerical: false, nextPage: 'Roots' }} />
                     <Stack.Screen name="Roots" component={UserSetupScreen} initialParams={{ title: "Core Questions", question: coreQuestions.Roots, answer: coreAnswers.Roots, skipable: true, numerical: false, nextPage: 'PreferedLocation' }} />
                     <Stack.Screen name="PreferedLocation" component={UserSetupScreen} initialParams={{ title: "Core Questions", question: coreQuestions.PreferedLocation, answer: coreAnswers.PreferedLocation, skipable: true, numerical: false, nextPage: "Politics" }} />
-                    <Stack.Screen name="Politics" component={UserSetupScreen} initialParams={{ title: "Core Questions", question: coreQuestions.Politics, answer: coreAnswers.Politics, skipable: true, numerical: false, nextPage: "RootNav" }} />
+                    <Stack.Screen name="Politics" component={UserSetupScreen} initialParams={{ title: "Core Questions", question: coreQuestions.Politics, answer: coreAnswers.Politics, skipable: true, numerical: false, nextPage: "FinishedSetupScreen" }} />
 
-                    {/* Set up something here to change json variblae hasUserProfile to true, it will switch to rendering home screen */}
-                    {/* {/* <Stack.Screen name="RootNav" component={RootNav} />} */}
+                    <Stack.Screen name="FinishedSetupScreen" component={FinishedSetupScreen} initalParams={{ nextPage: "ToHomeNav" }} />
+                    <Stack.Screen name="ToHomeNav" component={RootNav} />
                 </Stack.Navigator>
                 :
                 <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
