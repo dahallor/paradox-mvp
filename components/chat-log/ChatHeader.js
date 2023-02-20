@@ -8,7 +8,7 @@ export default function ChatHeader(props) {
     const navigation = useNavigation()
     const route = useRoute()
     let name = route.params.matchName
-    console.log(navigation, route)
+
     useEffect(() => {
         navigation.setOptions({
             headerTitle: () =>

@@ -48,5 +48,23 @@ export async function POSTRequest(path, value) {
     } catch (error) {
         console.log(error)
     }
+}
+
+export async function CreateNewToplineResource(path, value) {
+    try {
+        const res = await fetch(path, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(value)
+        })
+        const data = await res.json()
+        if (!res.ok) {
+            console.log('res issue')
+            console.log(res)
+        }
+        return data
+    } catch (error) {
+        console.log(error)
+    }
 
 }

@@ -1,21 +1,31 @@
 import { StyleSheet, Text, View, FlatList } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
+import { useEffect, useState, useRef } from 'react';
+import { GETRequest } from '../shared/Requests';
+import ROUTES from '../../constants/Routes'
+import ChatBubble from './ChatBubble';
 
 
 
 export default function ChatLog(props) {
-    const naviagtion = useNavigation()
+    const route = useRoute()
+    const flatListRef = useRef(props.log)
+
+    useEffect(() => {
+        flatListRef.current.scrollToEnd({ animated: true });
+    }, [])
+
+
     return (
         <View style={styles.container}>
             <FlatList
-                data={props.message}
-                renderItem={({ item }) => {
-                    item.client === true ?
-                        <Text style={styles.client}>{item.message}</Text>
-                        :
-                        <Text style={styles.notClient}>{item.message}</Text>
-                }
-                }
+                data={props.log}
+                ref={flatListRef}
+                keyExtractor={item => item.id}
+                onLayout={() => flatListRef.current.scrollToEnd({ animated: true })}
+                renderItem={({ item }) => (
+                    <ChatBubble item={item} route={route} />
+                )}
             />
         </View>
     )
@@ -30,10 +40,13 @@ const styles = StyleSheet.create({
     },
     client: {
         alignItems: 'flex-end',
-        backgroundColor: 'gray'
+        backgroundColor: 'gray',
+        margin: 5,
+        padding: 55
     },
     notClient: {
         alignItems: 'flex-start',
-        backgroundColor: 'gold'
+        backgroundColor: 'gold',
+        margin: 5
     }
 })
