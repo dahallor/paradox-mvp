@@ -18,7 +18,7 @@ export default function DisplayMatches(props) {
                             matchName: item.matchName,
                             uuid: item.uuid
                         })}>
-                        <Text>{item.date} | {item.matchName}</Text>
+                        <Text>{item.matchName}</Text>
                     </TouchableOpacity>
                 }
             />

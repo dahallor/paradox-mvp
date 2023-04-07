@@ -28,5 +28,7 @@ export default {
     ANDROID_A_DEMO: 'http://10.0.2.2:3002/demographicAnswers',
     ANDROID_A_CORE: 'http://10.0.2.2:3002/coreAnswers',
 
-    ANDROID_CHAT: 'http://10.0.2.2:3003/'
+    ANDROID_CHAT: 'http://10.0.2.2:3003/',
+
+    ANDROID_PROFILES: 'http://10.0.2.2:3004/'
 }

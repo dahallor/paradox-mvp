@@ -8,6 +8,8 @@ import SetupFooter from './SetupFooter';
 import { useRoute, useNavigation } from '@react-navigation/core'
 import { GETRequest, PATCHRequest } from '../shared/Requests'
 
+import ROUTES from '../../constants/Routes'
+
 
 export default function NoCheckboxCard(props) {
     const route = useRoute()
@@ -16,17 +18,25 @@ export default function NoCheckboxCard(props) {
     const [devComment, setDevComment] = useState(null)
 
     let checkForNull = route.params.answer[0].text
+    console.log(props)
+    console.log(navigation)
+    console.log(route)
+    console.log(route.params.uuid)
 
+
+    async function findPATCHPath(data) {
+        let path = ROUTES.ANDROID_PROFILES + route.params.uuid + 'intro/'
+        let res = PATCHRequest(path, "intro",)
+    }
 
     async function proceed(direction) {
 
         if (direction === "Submit") {
-            //Add JSON post request here
+            findPATCHPath(selection)
         }
 
         if (direction === "Skip") {
-            //post null to JSON file
-
+            findPATCHPath(null)
         }
         setSelection(null)
         setDevComment(null)

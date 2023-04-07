@@ -12,17 +12,8 @@ import RootNav from "./RootNav";
 
 
 export default function SetupNav(props) {
-    // let userInfo = require('../data/user-profile.json')
-    // let questions = require('../data/questions-template.json')
-    // let answers = require('../data/answers-template.json')
-
-
-
     const Stack = createStackNavigator()
     const [userInfo, setUserInfo] = useState(null)
-    const [userSettings, setUserSettings] = useState(null)
-    const [userDemographics, setUserDemographics] = useState(null)
-    const [userCoreAnswers, setUserCoreAnswers] = useState(null)
 
     const [introQuestions, setIntroQuestions] = useState(null)
     const [demographicQuestions, setDemographicQuestions] = useState(null)
@@ -36,15 +27,23 @@ export default function SetupNav(props) {
 
 
     useEffect(() => {
-        console.log('use effect')
         run()
 
     }, [])
 
     async function run() {
+        let userBool = await userCalls()
         let questionsBool = await questionCalls()
         let answersBool = await answerCalls()
-        await checkIfLoaded(questionsBool, answersBool)
+        await checkIfLoaded(userBool, questionsBool, answersBool)
+    }
+
+    async function userCalls() {
+        let path = ROUTES.ANDROID_USER_USERINFO
+        let data = await GETRequest(path)
+        setUserInfo(data)
+
+        return true
     }
 
     async function questionCalls() {
@@ -83,9 +82,8 @@ export default function SetupNav(props) {
 
 
 
-    async function checkIfLoaded(questionsBool, answersBool) {
-        console.log(questionsBool, answersBool)
-        if (questionsBool === true && answersBool === true) {
+    async function checkIfLoaded(userBool, questionsBool, answersBool) {
+        if (userBool === true && questionsBool === true && answersBool === true) {
             setIsLoaded(true)
         } else {
             setIsLoaded(false)
@@ -93,11 +91,12 @@ export default function SetupNav(props) {
 
     }
 
+    console.log(userInfo)
     return (
         <>
             {isLoaded === true ?
                 <Stack.Navigator initialRouteName="Home">
-                    <Stack.Screen name="UserName" component={UserSetupScreen} initialParams={{ title: "Introductory", userRoute: ROUTES.ANDROID_USER_USERINFO, question: introQuestions.UserName, answer: introAnswers.UserName, skipable: false, numerical: false, nextPage: 'Politics' }} />
+                    <Stack.Screen name="UserName" component={UserSetupScreen} initialParams={{ title: "Introductory", uuid: userInfo.uuid, question: introQuestions.UserName, answer: introAnswers.UserName, skipable: false, numerical: false, nextPage: 'Location' }} />
                     <Stack.Screen name="Location" component={UserSetupScreen} initialParams={{ title: "Introductory", question: introQuestions.Location, answer: introAnswers.Location, skipable: false, numerical: false, nextPage: 'Age' }} />
                     <Stack.Screen name="Age" component={UserSetupScreen} initialParams={{ title: "Introductory", question: introQuestions.Age, answer: introAnswers.Age, skipable: false, numerical: true, nextPage: 'Religion' }} />
 

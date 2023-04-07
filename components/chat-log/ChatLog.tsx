@@ -9,25 +9,18 @@ import ChatBubble from './ChatBubble';
 
 export default function ChatLog(props) {
     const route = useRoute()
-    const flatListRef = useRef(props.log)
-
-    useEffect(() => {
-        flatListRef.current.scrollToEnd({ animated: true });
-    }, [])
-
+    console.log(props)
 
     return (
-        <View style={styles.container}>
+        < View style={styles.container} >
             <FlatList
                 data={props.log}
-                ref={flatListRef}
                 keyExtractor={item => item.id}
-                onLayout={() => flatListRef.current.scrollToEnd({ animated: true })}
                 renderItem={({ item }) => (
                     <ChatBubble item={item} route={route} />
                 )}
             />
-        </View>
+        </View >
     )
 }
 

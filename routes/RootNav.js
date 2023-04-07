@@ -3,7 +3,7 @@ import ChatNav from './ChatNav';
 import HomeNav from './HomeNav';
 
 import HomeScreen from '../screens/bottom-tabs/HomeScreen';
-import ProfileScreen from '../screens/bottom-tabs/ProfileScreen';
+import ProfileScreen from '../screens/drill-down/ProfileScreen';
 import SearchScreen from '../screens/bottom-tabs/SearchScreen';
 import SettingsScreen from '../screens/bottom-tabs/SettingsScreen';
 import StoreScreen from '../screens/bottom-tabs/StoreScreen';
@@ -15,7 +15,6 @@ export default function RootNav() {
     return (
         <Tab.Navigator>
             <Tab.Screen name={ROUTES.HOME} component={ChatNav} />
-            {/* <Tab.Screen name={ROUTES.PROFILE} component={ProfileScreen} /> */}
             <Tab.Screen name={ROUTES.STORE} component={StoreScreen} />
             <Tab.Screen name={ROUTES.SEARCH} component={SearchScreen} />
             <Tab.Screen name={ROUTES.SETTINGS} component={SettingsScreen} />

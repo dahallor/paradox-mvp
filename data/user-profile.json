@@ -2,17 +2,12 @@
   "userInfo": {
     "userName": "Meow Mix",
     "userEmail": null,
-    "hasUserProfile": true,
+    "hasUserProfile": false,
     "isLoggedIn": true,
     "uuid": "asdf"
   },
   "userSettings": {
     "last-known-coordinates": null,
     "blocked-coordinates": null
-  },
-  "usersDemographics": {},
-  "userCoreAnswers": {},
-  "userHobbies": {},
-  "userAuxAnswers": {},
-  "userAboutMe": {}
+  }
 }

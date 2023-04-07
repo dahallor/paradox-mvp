@@ -1,8 +1,30 @@
 {
+    "compileOnSave": true,
+    "typeAcquisition": {
+        "enable": true
+    },
     "compilerOptions": {
-        "target": "esnext",
+        "target": "ESNext",
         "watch": true,
         "moduleResolution": "node",
-        "jsx": "react-native"
-    }
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "esModuleInterop": true,
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "typeRoots": [
+            "/Scripts/typings"
+        ]
+    },
+    "extends": "expo/tsconfig.base",
+    "exclude": [
+        "typings/browser.d.ts",
+        "typings/browser",
+        "node_modules"
+    ]
 }

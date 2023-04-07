@@ -9,7 +9,7 @@ import { GETRequest } from '../components/shared/Requests'
 import ROUTES from '../constants/Routes'
 
 import ChatScreen from "../screens/drill-down/ChatScreen";
-import ProfileScreen from "../screens/bottom-tabs/ProfileScreen";
+import ProfileScreen from "../screens/drill-down/ProfileScreen";
 import HomeNav from '../routes/HomeNav'
 import ChatHeader from "../components/chat-log/ChatHeader";
 
